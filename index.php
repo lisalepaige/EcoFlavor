@@ -68,10 +68,12 @@
    </main>
 
    <div class="ecokoerier">
-        <h3>Handenvrij Shoppen</h3>
-        <p>Sinds december '15 startten de ECOkoeriers met een unieke dienstverlening naar de shoppers.
+       <div class="eco__flex">
+        <h3 class="eco__h3">Handenvrij Shoppen</h3>
+        <p class="eco__p">Sinds december '15 startten de ECOkoeriers met een unieke dienstverlening naar de shoppers.
         Laat je aankopen achter in de winkels, de ECOkoeriers pikken ze voor je op en zorgen ervoor dat ze later die dag bij je thuis geleverd worden. </p>
-        <a href="ecokoeriers.php">Lees Meer</a>
-   </div>
+        <a href="ecokoeriers.php" class="btn btn--eco">Lees Meer<span class="border border--eco"></span></a>
+       </div>
+       </div>
 </body>
 </html>

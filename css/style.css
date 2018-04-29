@@ -155,6 +155,7 @@ header
 {
     padding-left: 30px;
     padding-right: 30px;
+    margin-bottom: 9px;
 }
 
 .cat__streek
@@ -162,8 +163,8 @@ header
     padding-left: 31px;
     padding-right: 31px;
     background-color: #8C1A14;
+    margin-bottom: 9px;
 }
-
 .cat__seizoen
 {
     display: grid;
@@ -176,6 +177,7 @@ header
     display: block;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 .cat__fair img
@@ -202,6 +204,7 @@ header
 {
     display: block;
     margin-top: 9px;
+    margin-bottom: -9px;
     width: 205px;
     margin-left: -30px;
 }
@@ -220,13 +223,53 @@ header
 .cat__bio .borderCat
 {
     padding-right: 1px;
+    display: block;
+    margin-top: 9px;
+    margin-bottom: -9px;
+}
+
+.cat__streek .borderCat
+{
+    display: block;
+    margin-top: 9px;
+    margin-bottom: -9px;
 }
 
 .ecokoerier
 {
-    background-image: url("../images/ecokoeriers.png") no-repeat;
-    
-    width: 400px;
-    height: 400px;
-   
+    background: url("../images/ecokoeriers.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.eco__flex
+{
+   width: 250px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-content: flex-end;
+   margin-left: 230px;
+}
+
+.eco__h3
+{
+    color: #EB6608;
+    margin-bottom: 0px;
+}
+
+.eco__p
+{
+    color: #666666;
+    margin-bottom: 0px;
+}
+
+.btn--eco
+{
+    margin-top: 0px;
+    margin-left: 145px;
+    margin-bottom: 170px;
 }
