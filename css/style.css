@@ -133,8 +133,8 @@ header
 .cat
 {
     margin-top: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 15px;
+    padding-right: 45px;
     background-color: #93C01F;
     color: white;
     font-family: 'Century Gothic';
@@ -153,8 +153,8 @@ header
 
 .cat__bio
 {
-    padding-left: 33px;
-    padding-right: 31px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .cat__streek
@@ -200,9 +200,26 @@ header
 
 .borderCat
 {
-    margin-top: 15px;
+    display: block;
+    margin-top: 9px;
     width: 205px;
     margin-left: -30px;
+}
+
+.cat__fair .borderCat
+{
+    margin-left: -15px;
+    padding-right: 1px;
+}
+
+.cat__seizoen .borderCat
+{
+    margin-left: -15px;
+}
+
+.cat__bio .borderCat
+{
+    padding-right: 1px;
 }
 
 .ecokoerier
