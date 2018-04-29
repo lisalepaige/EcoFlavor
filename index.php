@@ -11,7 +11,6 @@
 </head>
 <body>
    <header>
-<<<<<<< HEAD
         <img src="images/home.png" alt="home" class="header__home">
         <img src="images/instellingen.png" alt="instellingen">
    </header>
