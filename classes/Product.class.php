@@ -2,14 +2,14 @@
 
 include_once('Db.class.php');
 
-    class Post {
+    class Product {
     
         private $db;
 
             public static function ShowProduct(){
 
                 $conn = Db::getInstance();
-                $statement = $conn->prepare("SELECT product.naam, prijs, handelaar.naam FROM product, handelaar WHERE product.handelaar_id = handelaar.id");
+                $statement = $conn->prepare("SELECT product.product_naam, product_prijs, product_img, handelaar.naam FROM product, handelaar WHERE product.handelaar_id = handelaar.id");
                 $statement->execute();
 
                 return $statement->fetchAll(PDO::FETCH_ASSOC);
@@ -24,7 +24,7 @@ include_once('Db.class.php');
 
                         $foundProduct = [];
                         foreach($product as $p){
-                                if(strpos(strtolower($p['naam']), strtolower($search)) !== false){
+                                if(strpos(strtolower($p['product_naam']), strtolower($search)) !== false){
                                     $foundProduct[] = $p;
                                 }                                
                         }

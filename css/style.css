@@ -19,12 +19,19 @@ header
 .search__input
 {
     background-color: #93C01F;
-    font-size: 1.7em;
+    font-size: 1.6em;
     opacity: 0.6;
     border-style: none;
     border-bottom-style: double;
     border-color: white;
     color: white;
+}
+
+.searchNav
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .search 
@@ -272,4 +279,85 @@ header
     margin-top: 0px;
     margin-left: 145px;
     margin-bottom: 170px;
+}
+
+/* search.php */
+
+.searchP
+{
+    background-color: #F2F2F2;
+    color: #4D180C;
+    font-family: 'Century Gothic';
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.searchP__titel
+{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.searchP__list
+{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 33% 36% 30%;
+    margin-bottom: 10px;
+}
+
+.searchP__img
+{
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.btn--searchP
+{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.searchP__grid
+{
+    margin-left: 5px;
+    font-family: 'Roboto';
+}
+
+.searchP__pnaam
+{
+    text-transform: uppercase;
+    font-family: 'Century Gothic';
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+.searchP__hnaam
+{
+    color: #62822C;
+    margin-top: 0px;
+    margin-bottom: 4px;
+    font-size: 0.9em;
+}
+
+.searchP__afstand
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 0.9em;
+}
+
+.searchP__prijs
+{
+    color: #8C1A14;
+    font-weight: bold;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+.searchP__v
+{
+    margin-bottom: -10px;
 }

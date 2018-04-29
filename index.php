@@ -1,17 +1,4 @@
-<?php
-
-include_once("classes/Product.class.php");
-
-if ( isset($_GET['search']) ){
-    $search = $_GET['search'];
-    $product = Product::searchProduct($search);
-    echo $search;
-    
-} else {
-    $product = Product::ShowProduct();
-}
-
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -23,17 +10,8 @@ if ( isset($_GET['search']) ){
     <title>EcoFlavor</title>
 </head>
 <body>
-   <header>
-        <img src="images/home.png" alt="home" class="header__home">
-        <img src="images/instellingen.png" alt="instellingen">
-   </header>
-
-   <div class="search">
-       <form action="" method="get" class="searchNav">
-        <input type="search" name="search" placeholder="zoek jouw product" class="search__input">
-        <img src="images/search.png" alt="search" class="search__icon">
-    </form>
-    </div>
+    
+   <?php include_once("nav.inc.php"); ?>
 
    <div class="maand">
         <h1 class="maand__h1">Product van de maand</h1>
