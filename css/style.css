@@ -1,0 +1,215 @@
+body
+{
+    max-width: 480px;
+    font-family: 'Roboto', sans-serif;
+}
+
+header
+{
+    background-color: #93C01F;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__home
+{
+    opacity: 0.5;
+}
+
+.search__input
+{
+    background-color: #93C01F;
+    font-size: 1.7em;
+    opacity: 0.6;
+    border-style: none;
+    border-bottom-style: double;
+    border-color: white;
+    color: white;
+}
+
+.search 
+{
+    background-color: #93C01F;
+    padding: 20px;
+    padding-right: 151px;
+    padding-left: 151px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.maand
+{
+    color: white;
+    background-image: url("../images/background.png");
+    border-bottom-style: solid;
+    border-color: #93C01F;
+    border-width: 5px;
+    padding-left: 5px;
+    margin-top: 20px;
+}
+
+.maand__h1
+{
+    padding-top: 5px;
+    margin: 0px;
+}
+
+.maand__h2
+{
+    color: #93C01F;
+    margin: 0px;
+}
+
+.maand__p
+{
+    width: 270px;
+    font-size: 0.9em;
+    
+}
+
+.maand__grid
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.btn
+{
+    padding: 3px;
+    background-color: #93C01F;
+    width: 100px;
+    height: 20px;
+    margin-top: 80px;
+    margin-left: 80px;
+    color: white;  
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.border
+{
+   display: block;
+   width: 100px;
+   height: 3px;
+   padding-left: 3px;
+   padding-right: 3px;
+   margin-left: -3px;
+   margin-top: 9px;
+   background-color:#93C01F;
+}
+
+.categoriën
+{
+    background-color: #F2F2F2;
+    padding-top: 10px;
+    padding-left: 5px;
+
+}
+
+.categorie
+{
+    display: grid;
+    grid-template-columns: 50% 50% 0%;
+    grid-template-rows: 50% 50% 0%;
+    justify-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.categorie a 
+{
+    text-decoration: none;
+}
+
+.categoriën h3
+{
+    color: #4D180C;
+    margin: 0px;
+}
+
+.cat
+{
+    margin-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #93C01F;
+    color: white;
+    font-family: 'Century Gothic';
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    max-width: 150px;
+    font-size: 0.8em;
+    margin-bottom: 15px;
+}
+
+.cat img
+{
+    margin-top: 10px;
+}
+
+.cat__bio
+{
+    padding-left: 33px;
+    padding-right: 31px;
+}
+
+.cat__streek
+{
+    padding-left: 31px;
+    padding-right: 31px;
+    background-color: #8C1A14;
+}
+
+.cat__seizoen
+{
+    display: grid;
+    grid-column: 0 / 1;
+    background-color: #F29100;
+}
+
+.cat__seizoen img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cat__fair img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cat__fair
+{
+    display: grid;
+    grid-column: 1 / 1; 
+    background-color: #EB6608;
+}
+
+.afair 
+{
+    display: grid;
+    grid-column: 1 / 1; 
+}
+
+.borderCat
+{
+    margin-top: 15px;
+    width: 205px;
+    margin-left: -30px;
+}
+
+.ecokoerier
+{
+    background-image: url("../images/ecokoeriers.png") no-repeat;
+    
+    width: 400px;
+    height: 400px;
+   
+}
