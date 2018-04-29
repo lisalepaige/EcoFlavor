@@ -5,10 +5,9 @@ include_once("classes/Product.class.php");
 if ( isset($_GET['search']) ){
     $search = $_GET['search'];
     $product = Product::searchProduct($search);
-    echo $search;
-    
-} else {
-    $product = Product::ShowProduct();
+        echo $search;  
+
+        
 }
 
 ?><!DOCTYPE html>

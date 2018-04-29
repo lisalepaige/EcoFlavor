@@ -17,10 +17,10 @@ include_once('Db.class.php');
 
             public static function searchProduct($search){
                     $conn = Db::getInstance();
-                    $stm = $conn->prepare("SELECT * FROM product");
+                    $statement = $conn->prepare("SELECT product.product_naam, product_prijs, product_img, handelaar.naam FROM product, handelaar WHERE product.handelaar_id = handelaar.id");
                         
-                        $stm->execute();
-                        $posts = $stm->fetchAll(PDO::FETCH_ASSOC);
+                        $statement->execute();
+                        $product = $statement->fetchAll(PDO::FETCH_ASSOC);
 
                         $foundProduct = [];
                         foreach($product as $p){
