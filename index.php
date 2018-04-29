@@ -1,4 +1,17 @@
-<!DOCTYPE html>
+<?php
+
+include_once("classes/Product.class.php");
+
+if ( isset($_GET['search']) ){
+    $search = $_GET['search'];
+    $product = Product::searchProduct($search);
+    echo $search;
+    
+} else {
+    $product = Product::ShowProduct();
+}
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">

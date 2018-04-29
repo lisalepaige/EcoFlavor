@@ -1,18 +1,36 @@
-public static function searchPosts($search){
-                        $conn = Db::getInstance();
-                        $stm = $conn->prepare("SELECT * FROM posts, tags WHERE tags.post_id = posts.post_id");
+<?php
+
+include_once('Db.class.php');
+
+    class Post {
+    
+        private $db;
+
+            public static function ShowProduct(){
+
+                $conn = Db::getInstance();
+                $statement = $conn->prepare("SELECT product.naam, prijs, handelaar.naam FROM product, handelaar WHERE product.handelaar_id = handelaar.id");
+                $statement->execute();
+
+                return $statement->fetchAll(PDO::FETCH_ASSOC);
+            }
+
+            public static function searchProduct($search){
+                    $conn = Db::getInstance();
+                    $stm = $conn->prepare("SELECT * FROM product");
                         
                         $stm->execute();
                         $posts = $stm->fetchAll(PDO::FETCH_ASSOC);
 
-                        $foundPosts = [];
-                        foreach($posts as $p){
-                                if(strpos(strtolower($p['post_desc']), strtolower($search)) !== false || strpos(strtolower($p['tag_name']), strtolower($search)) !== false){
-                                    $foundPosts[] = $p;
-                                }
-
-                                
+                        $foundProduct = [];
+                        foreach($product as $p){
+                                if(strpos(strtolower($p['naam']), strtolower($search)) !== false){
+                                    $foundProduct[] = $p;
+                                }                                
                         }
 
-                        return $foundPosts;
-                }
+                        return $foundProduct;
+            }
+    }
+
+?>
