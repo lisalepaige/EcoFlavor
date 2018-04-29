@@ -16,8 +16,10 @@
    </header>
 
    <div class="search">
-        <input type="search" value="zoek jouw product" class="search__input">
+       <form action="" method="get" class="searchNav">
+        <input type="search" name="search" placeholder="zoek jouw product" class="search__input">
         <img src="images/search.png" alt="search" class="search__icon">
+    </form>
     </div>
 
    <div class="maand">
