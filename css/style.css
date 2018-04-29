@@ -1,5 +1,6 @@
 body
 {
+<<<<<<< HEAD
     max-width: 480px;
     font-family: 'Roboto', sans-serif;
 }
@@ -273,3 +274,7 @@ header
     margin-left: 145px;
     margin-bottom: 170px;
 }
+=======
+    background-color: greenyellow;
+}
+>>>>>>> 4ce870b6fbbbdc7e064b28e5e9d05ef067ad7ccf

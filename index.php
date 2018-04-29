@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css"> 
+
     <title>EcoFlavor</title>
 </head>
 <body>
    <header>
+<<<<<<< HEAD
         <img src="images/home.png" alt="home" class="header__home">
         <img src="images/instellingen.png" alt="instellingen">
    </header>
