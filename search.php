@@ -1,6 +1,9 @@
 <?php
 
 include_once("classes/Product.class.php");
+include_once("classes/Handelaar.class.php");
+
+$verification = Handelaar::Verification();
 
 if ( isset($_GET['search']) ){
     $search = $_GET['search'];
@@ -23,7 +26,9 @@ if ( isset($_GET['search']) ){
             <div class="searchP__grid">
                 <h4 class="searchP__pnaam"><?php echo $p['product_naam']; ?></h4>
                 <p class="searchP__hnaam"><?php echo $p['naam']; ?>
-                <img src="images/verificatie.png" alt="verificatie" class="searchP__v"></p>
+                <?php if ($p['verificatie'] == 1): ?>
+                    <img src="images/verificatie.png" alt="verificatie" class="searchP__v"></p>
+                <?php endif; ?>
                 <p class="searchP__afstand">600m</p>
                 <p class="searchP__prijs">€ <?php echo $p['product_prijs']; ?></p>
             </div>  

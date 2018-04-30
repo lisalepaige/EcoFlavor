@@ -1,7 +1,9 @@
 <?php
     include_once("classes/Product.class.php");
+    include_once("classes/Handelaar.class.php");
 
     $products = Product::ShowProduct();
+    $verification = Handelaar::Verification();
 
     $id = $_GET['id']; 
     echo $id;
@@ -35,16 +37,19 @@
 
     <div class="information">
         <p class="info__hnaam"><?php echo $p['naam']; ?>
+        <?php if ($p['verificatie'] == 1): ?>
+            <img src="images/verificatie.png" alt="verificatie" class="searchP__v">
+        <?php endif; ?>
         <div class="info__flex">
             <h4 class="searchP__pnaam pnaam--info"><?php echo $p['product_naam']; ?></h4>
             <p class="searchP__prijs prijs--info">€ <?php echo $p['product_prijs']; ?></p>
         </div>
         <div class="info">
-            <p class="info__vers"></p>
+            <p class="info__vers"><?php echo $p['vers']; ?></p>
             <p class="info__seizoen">Seizoensproduct: <span><?php echo $p['seizoensproduct']; ?></span></p>
             <p class="info__oorsprong">Oorsprong: <span><?php echo $p['oorsprong']; ?></span></p>
-            <p class="info__bio"></p>
-            <p class="info__fair"></p>
+            <p class="info__bio"><?php echo $p['bio']; ?></p>
+            <p class="info__fair"><?php echo $p['fairtrade']; ?></p>
         </div>
     </div>
 
