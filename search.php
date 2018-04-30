@@ -27,7 +27,7 @@ if ( isset($_GET['search']) ){
                 <p class="searchP__afstand">600m</p>
                 <p class="searchP__prijs">€ <?php echo $p['product_prijs']; ?></p>
             </div>  
-            <a href="#" class="btn btn--searchP">Lees Meer<span class="border"></span></a>
+            <a href="detail.php?id=<?php echo $p['id']; ?>" class="btn btn--searchP">Lees Meer<span class="border"></span></a>
         </div>
         <?php endforeach; ?>
 

@@ -332,3 +332,67 @@ header
     margin-bottom: -10px;
 }
 
+/* detail.php */
+
+.detail
+{
+    background-color: #62822C;
+    margin-top: 10px;
+}
+
+.detail__img
+{
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.information
+{
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.info__hnaam
+{
+    color: #EB6608;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+
+.pnaam--info
+{
+    font-size: 1.4em;
+}
+
+.info__flex
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.prijs--info
+{
+    font-weight: bold;
+    display: flex;
+    align-self: flex-end;
+    margin-right: 50px;
+    font-size: 1em;
+}
+
+.info
+{
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+.info span
+{
+    font-weight: normal;
+}
+
