@@ -11,11 +11,6 @@ header
     justify-content: space-between;
 }
 
-.header__home
-{
-    opacity: 0.5;
-}
-
 .search__input
 {
     background-color: #93C01F;
