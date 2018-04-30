@@ -9,13 +9,14 @@ include_once('Db.class.php');
             public static function ShowProduct(){
 
                 $conn = Db::getInstance();
-                $statement = $conn->prepare("SELECT product.product_naam, product_prijs, product_img, handelaar.naam FROM product, handelaar WHERE product.handelaar_id = handelaar.id");
+                $statement = $conn->prepare("SELECT * FROM product, handelaar WHERE product.handelaar_id = handelaar.id");
                 $statement->execute();
 
-                return $statement->fetchAll(PDO::FETCH_ASSOC);
+                return $products = $statement->fetchAll(PDO::FETCH_ASSOC);
             }
 
             public static function searchProduct($search){
+
                     $conn = Db::getInstance();
                     $statement = $conn->prepare("SELECT product.product_naam, product_prijs, product_img, handelaar.naam FROM product, handelaar WHERE product.handelaar_id = handelaar.id");
                         
