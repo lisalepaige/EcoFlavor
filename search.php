@@ -4,10 +4,7 @@ include_once("classes/Product.class.php");
 
 if ( isset($_GET['search']) ){
     $search = $_GET['search'];
-    $product = Product::searchProduct($search);
-        echo $search;  
-
-        
+    $product = Product::searchProduct($search);        
 }
 
 ?><!DOCTYPE html>
@@ -26,7 +23,7 @@ if ( isset($_GET['search']) ){
     <?php include_once("nav.inc.php"); ?>  
  
     <main class="searchP">
-        <h2 class="searchP__titel">Appelen</h2>
+        <h2 class="searchP__titel"><?php echo $search; ?></h2>
 
         <?php foreach($product as $p): ?>
 

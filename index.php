@@ -3,8 +3,7 @@
 
     if ( isset($_GET['search']) ){
         $search = $_GET['search'];
-        $product = Product::searchProduct($search);
-        echo $search;   
+        $product = Product::searchProduct($search);  
 
         header("Location: search.php?search=$search");
 }
