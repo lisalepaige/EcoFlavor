@@ -160,23 +160,26 @@ header
 
 .cat__bio
 {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 35px;
+    padding-right: 35px;
     margin-bottom: 9px;
+    padding-bottom: 15px;
 }
 
 .cat__streek
 {
-    padding-left: 31px;
-    padding-right: 31px;
+    padding-left: 35px;
+    padding-right: 35px;
     background-color: #8C1A14;
     margin-bottom: 9px;
+    padding-bottom: 15px;
 }
 .cat__seizoen
 {
     display: grid;
     grid-column: 0 / 1;
     background-color: #F29100;
+    padding-bottom: 15px;
 }
 
 .cat__seizoen img
@@ -184,7 +187,7 @@ header
     display: block;
     margin-left: auto;
     margin-right: auto;
-    
+    padding-left: 25px;
 }
 
 .cat__fair img
@@ -192,6 +195,12 @@ header
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 25px;
+}
+
+.cat__fair p
+{
+    padding-left: 25px;
 }
 
 .cat__fair
@@ -199,47 +208,13 @@ header
     display: grid;
     grid-column: 1 / 1; 
     background-color: #EB6608;
+    
 }
 
 .afair 
 {
     display: grid;
     grid-column: 1 / 1; 
-}
-
-.borderCat
-{
-    display: block;
-    margin-top: 9px;
-    margin-bottom: -9px;
-    width: 205px;
-    margin-left: -30px;
-}
-
-.cat__fair .borderCat
-{
-    margin-left: -15px;
-    padding-right: 1px;
-}
-
-.cat__seizoen .borderCat
-{
-    margin-left: -15px;
-}
-
-.cat__bio .borderCat
-{
-    padding-right: 1px;
-    display: block;
-    margin-top: 9px;
-    margin-bottom: -9px;
-}
-
-.cat__streek .borderCat
-{
-    display: block;
-    margin-top: 9px;
-    margin-bottom: -9px;
 }
 
 .ecokoerier

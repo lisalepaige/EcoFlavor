@@ -6,7 +6,7 @@
         $product = Product::searchProduct($search);
         echo $search;   
 
-        //header("Location: search.php");
+        header("Location: search.php?search=$search");
 }
 
 ?><!DOCTYPE html>
@@ -42,7 +42,6 @@
             <div class="cat cat__bio">
                 <img src="images/bio.png" alt="bio">
                 <p>Bio Producten</p>
-                <span class="border borderCat"></span>
             </div>
             </a>
 
@@ -50,7 +49,6 @@
             <div class="cat cat__streek">
                 <img src="images/streek.png" alt="streek">
                 <p>Streekproducten</p>
-                <span class="border borderCat"></span>
             </div>
             </a>
 
@@ -58,7 +56,6 @@
             <div class="cat cat__fair">
                 <img src="images/fairtrade.png" alt="fairtrade">
                 <p>Fairtrade Producten</p>
-                <span class="border borderCat"></span>
             </div>
             </a>
 
@@ -66,7 +63,6 @@
             <div class="cat cat__seizoen">
                 <img src="images/bio.png" alt="seizoen">
                 <p>Seizoensproducten</p>
-                <span class="border borderCat"></span>
             </div>
             </a>
         </div>

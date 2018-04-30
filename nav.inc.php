@@ -1,6 +1,6 @@
 <header>
-        <img src="images/home.png" alt="home" class="header__home">
-        <img src="images/instellingen.png" alt="instellingen">
+        <a href="index.php"><img src="images/home.png" alt="home" class="header__home"></a>
+        <a href="instellingen.php"><img src="images/instellingen.png" alt="instellingen"></a>
 </header>
 
    <div class="search">
