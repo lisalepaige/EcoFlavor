@@ -2,11 +2,13 @@
     include_once("classes/Product.class.php");
     include_once("classes/Handelaar.class.php");
 
-    $products = Product::ShowProduct();
+    $id = $_GET['id'];
+
+    $oneProduct = Product::ShowOne($id);
     $verification = Handelaar::Verification();
 
-    $id = $_GET['id']; 
-    echo $id;
+    $product = Product::ShowProduct(); 
+    
 
 ?><!DOCTYPE html>
 
@@ -29,7 +31,7 @@
     </div>
 
 <main>
-    <?php foreach($products as $p): ?>
+    <?php foreach($oneProduct as $p): ?>
 
     <div class="detail">
         <img src="images/<?php echo $p['product_img']; ?>" alt="product" class="detail__img" >
@@ -52,8 +54,63 @@
             <p class="info__fair"><?php echo $p['fairtrade']; ?></p>
         </div>
     </div>
+    
+
+    <div class="bestelling">
+        <a href=".php" class="btn--bestelling">Bestelling plaatsen<span class="border-bestelling"></span></a>
+    </div>  
+
+
+    <div class="uren">
+        <img src="images/klok.png" alt="klok" class="uren__img">
+        <h3 class="uren__titel">Openingsuren</h3>
+        <div class="dagen">
+            <p class="uren__ma" "uren__dagen">Maandag: <span><?php echo $p['maandag_start']; ?>  - </span></p>
+            <p class="uren__stop" "uren__dagen"><span> <?php echo $p['maandag_stop']; ?></span></p>
+
+            <p class="uren__di" "uren__dagen">Dinsdag: <span><?php echo $p['dinsdag_start']; ?>  - </p>
+            <p class="uren__stop" "uren__dagen"><span> <?php echo $p['dinsdag_stop']; ?></span></p>
+
+            <p class="uren__wo" "uren__dagen">Woensdag: <span><?php echo $p['woensdag_start']; ?>  - </p>
+            <p class="uren__stop" "uren__dagen"><span> <?php echo $p['woensdag_stop']; ?></span></p>
+
+            <p class="uren__do" "uren__dagen">Donderdag: <span><?php echo $p['donderdag_start']; ?>  - </p>
+            <p class="uren__stop" "uren__dagen"><span> <?php echo $p['donderdag_stop']; ?></span></p>
+
+            <p class="uren__vr" "uren__dagen">Vrijdag: <span><?php echo $p['vrijdag_start']; ?>  - </p>
+            <p class="uren__stop" "uren__dagen"><span> <?php echo $p['vrijdag_stop']; ?></span></p>
+
+            <p class="uren__za" "uren__dagen">Zaterdag: <span><?php echo $p['zaterdag_start']; ?>  - </p>
+            <p class="uren__stop" "uren__dagen"><span> <?php echo $p['zaterdag_stop']; ?></span></p>
+
+            <p class="uren__zo" "uren__dagen">Zondag: <span><?php echo $p['zondag_start']; ?>  - </p>
+            <p class="uren__stop" "uren__dagen"><span> <?php echo $p['zondag_stop']; ?></span></p>
+
+        </div>
+    </div>
+
+    <div class="contact">
+        <h3 class="contact__titel">Contact</h3>
+        <h4 class="contact__bijtitel">Breng ons een bezoekje</h4>
+        <div class="adres">
+            <p class="adres__info"> <?php echo $p['straatnaam']; ?> </p>
+            <p class="adres__info"> <?php echo $p['huisnummer']; ?> </p>
+            <p class="adres__info"> <?php echo $p['postcode']; ?> </p>
+            <p class="adres__info"> <?php echo $p['gemeente']; ?></p>
+        </div>
+            <p class="adres__mail"><?php echo $p['handelaar_mail']; ?></p>
+            <p>0<?php echo $p['telefoon']; ?></p>
+        
+    </div>
 
     <?php endforeach; ?>
+
+    <div class="ecokoerier">
+       <div class="eco__flex eco__leveren" >
+        <h3 class="eco__titel">Mijn boodschappen thuis laten leveren via de ecokoeriers</h3>
+        <a href="ecokoeriers.php" class="btn btn--eco">Lees Meer<span class="border border--eco"></span></a>
+       </div>
+       </div>
 </main>
 
 </body>

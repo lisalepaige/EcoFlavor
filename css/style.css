@@ -396,3 +396,135 @@ header
     font-weight: normal;
 }
 
+.bestelling 
+{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.btn--bestelling
+{
+    width: 300px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 10px;
+    background-color: #93C01F;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.border-bestelling
+{
+    display: block;
+    width: 300px;
+    border-bottom: 2px solid greenyellow;
+    height: 3px;
+    margin-top: 9px;
+}
+
+.uren
+{
+    background-color: #EB6608;
+    font-family: 'Roboto';
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.uren__titel
+{
+    color: white;
+    margin-top: 0px;
+}
+
+.dagen
+{
+    color: #8C1A14;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.dagen span
+{
+    color: white;
+    margin-right: 5px;
+}
+
+.uren__dagen
+{
+    margin-bottom: 20px;
+}
+
+.uren__ma, .uren__di, .uren__wo, .uren__do, .uren__vr, .uren__za, .uren__zo
+{
+    display: inline;
+}
+
+
+.uren__stop
+{
+    display: inline;
+}
+
+.contact
+{
+    text-align: center;
+    font-family: 'Roboto';
+    color: #666666;
+}
+
+.contact__titel
+{
+    color: #4D180C;
+    font-size: 1.4em;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.contact__bijtitel
+{
+    margin-top: 10px;
+    color: #62822C;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.adres
+{
+    font-family: 0.8em;
+    display: flex;
+    flex-direction: row;
+    margin-left: 5px;
+    justify-content: center;
+}
+
+.adres__info
+{
+    margin-right: 5px;
+}
+
+.adres__mail
+{
+    margin: 0px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+
+.eco__titel
+{
+    color: #EB6608;
+    margin-left: -200px;
+}
+
+eco__leveren
+{
+    display: block;
+}
