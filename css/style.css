@@ -18,12 +18,15 @@ header
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    
 }
 
 .nav__item a
 {
     text-decoration: none;
     color: white;
+    font-family: 'Roboto';
+    font-size: 0.8em;
 }
 
 .nav__item
