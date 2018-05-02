@@ -12,7 +12,17 @@
 <?php include_once("head.inc.php"); ?>
 <body>
     
-   <?php include_once("nav.inc.php"); ?>
+<header>
+        <a href="index.php"><img src="images/home.png" alt="home" class="header__home"></a>
+        <a href="instellingen.php"><img src="images/instellingen.png" alt="instellingen"></a>
+</header>
+
+   <div class="search">
+       <form action="" method="get" class="searchNav">
+        <input type="search" name="search" placeholder="zoek jouw product" class="search__input">
+        <input type=image src=images/search.png alt="Submit">
+    </form>
+    </div>
 
    <div class="maand">
         <h1 class="maand__h1">Product van de maand</h1>
@@ -66,5 +76,7 @@
         <a href="ecokoeriers.php" class="btn btn--eco">Lees Meer<span class="border border--eco"></span></a>
        </div>
        </div>
+
+       <?php include_once("nav.inc.php"); ?>
 </body>
 </html>

@@ -11,6 +11,27 @@ header
     justify-content: space-between;
 }
 
+.nav 
+{
+    list-style: none;
+    background-color: #1D202E;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav__item a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.nav__item
+{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
 .search__input
 {
     background-color: #93C01F;
@@ -219,7 +240,6 @@ header
     background-position: bottom;
     background-size: cover;
     max-width: 100%;
-    margin-bottom: 20px;
 }
 
 .eco__flex
@@ -334,6 +354,11 @@ header
 
 /* detail.php */
 
+.detailphp
+{
+    background-color: #F2F2F2;
+}
+
 .detail
 {
     background-color: #62822C;
@@ -354,7 +379,7 @@ header
 {
     background-color: white;
     margin-top: 10px;
-    margin-left: 20px;
+    padding-bottom: 20px;
 }
 
 .info__hnaam
@@ -362,6 +387,7 @@ header
     color: #EB6608;
     font-family: 'Roboto';
     font-weight: bold;
+    margin-left: 20px;
 }
 
 .pnaam--info
@@ -374,6 +400,7 @@ header
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-left: 20px;
 }
 
 .prijs--info
@@ -479,6 +506,10 @@ header
     text-align: center;
     font-family: 'Roboto';
     color: #666666;
+    margin-bottom: 20px;
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .contact__titel
@@ -522,9 +553,13 @@ header
 {
     color: #EB6608;
     margin-left: -200px;
+    padding-bottom: 40px;
+    margin-bottom: 0px;
 }
 
-eco__leveren
+.btn--leveren
 {
-    display: block;
+    margin-top: 0px;
+    margin-bottom: 150px;
 }
+

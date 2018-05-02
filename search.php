@@ -14,7 +14,18 @@ if ( isset($_GET['search']) ){
 <?php include_once("head.inc.php"); ?>
 <body>
 
-    <?php include_once("nav.inc.php"); ?>  
+    <header>
+    <a href="index.php"><img src="images/arrow.png" alt="back"></a>
+        <a href="index.php"><img src="images/home.png" alt="home" class="header__home"></a>
+        <a href="instellingen.php"><img src="images/instellingen.png" alt="instellingen"></a>
+</header>
+
+   <div class="search">
+       <form action="" method="get" class="searchNav">
+        <input type="search" name="search" placeholder="zoek jouw product" class="search__input">
+        <input type=image src=images/search.png alt="Submit">
+    </form>
+    </div>  
  
     <main class="searchP">
         <h2 class="searchP__titel"><?php echo $search; ?></h2>
@@ -25,7 +36,7 @@ if ( isset($_GET['search']) ){
             <img src="images/<?php echo $p['product_img']; ?>" alt="product" class="searchP__img" >
             <div class="searchP__grid">
                 <h4 class="searchP__pnaam"><?php echo $p['product_naam']; ?></h4>
-                <p class="searchP__hnaam"><?php echo $p['naam']; ?>
+                <p class="searchP__hnaam"><?php echo $p['handelaar_naam']; ?>
                 <?php if ($p['verificatie'] == 1): ?>
                     <img src="images/verificatie.png" alt="verificatie" class="searchP__v"></p>
                 <?php endif; ?>
@@ -37,6 +48,8 @@ if ( isset($_GET['search']) ){
         <?php endforeach; ?>
 
     </main>
+
+   <?php include_once("nav.inc.php"); ?>
 
 </body>
 </html>

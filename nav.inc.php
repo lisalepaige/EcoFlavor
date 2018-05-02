@@ -1,11 +1,6 @@
-<header>
-        <a href="index.php"><img src="images/home.png" alt="home" class="header__home"></a>
-        <a href="instellingen.php"><img src="images/instellingen.png" alt="instellingen"></a>
-</header>
-
-   <div class="search">
-       <form action="" method="get" class="searchNav">
-        <input type="search" name="search" placeholder="zoek jouw product" class="search__input">
-        <input type=image src=images/search.png alt="Submit">
-    </form>
-    </div>
+<nav class="nav">
+    <li class="nav__item"><a href="profiel.php"><img src="images/profiel.png" alt="profiel">Profiel</a></li>
+    <li class="nav__item"><a href="toevoegen.php"><img src="images/toevoegen.png" alt="plus">Toevoegen</a></li>
+    <li class="nav__item"><a href="winkelmaandje.php"><img src="images/kar.png" alt="mandje">Winkelmandje</a></li>
+    <li class="nav__item"><a href="zoeken.php"><img src="images/zoeken.png" alt="zoeken">Zoeken</a></li>
+</nav>

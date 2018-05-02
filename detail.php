@@ -15,7 +15,7 @@
 <?php include_once("head.inc.php"); ?>
 
 
-<body>
+<body class="detailphp">
     
 <header>
     <a href="search.php?search="$search""><img src="images/arrow.png" alt="back"></a>
@@ -38,7 +38,7 @@
     </div>
 
     <div class="information">
-        <p class="info__hnaam"><?php echo $p['naam']; ?>
+        <p class="info__hnaam"><?php echo $p['handelaar_naam']; ?>
         <?php if ($p['verificatie'] == 1): ?>
             <img src="images/verificatie.png" alt="verificatie" class="searchP__v">
         <?php endif; ?>
@@ -53,12 +53,11 @@
             <p class="info__bio"><?php echo $p['bio']; ?></p>
             <p class="info__fair"><?php echo $p['fairtrade']; ?></p>
         </div>
-    </div>
-    
 
-    <div class="bestelling">
+        <div class="bestelling">
         <a href=".php" class="btn--bestelling">Bestelling plaatsen<span class="border-bestelling"></span></a>
-    </div>  
+        </div>  
+    </div>
 
 
     <div class="uren">
@@ -88,6 +87,7 @@
 
         </div>
     </div>
+    </main>
 
     <div class="contact">
         <h3 class="contact__titel">Contact</h3>
@@ -108,10 +108,10 @@
     <div class="ecokoerier">
        <div class="eco__flex eco__leveren" >
         <h3 class="eco__titel">Mijn boodschappen thuis laten leveren via de ecokoeriers</h3>
-        <a href="ecokoeriers.php" class="btn btn--eco">Lees Meer<span class="border border--eco"></span></a>
+        <a href="ecokoeriers.php" class="btn btn--leveren">Leveren<span class="border border--eco"></span></a>
        </div>
        </div>
-</main>
 
+    <?php include_once("nav.inc.php"); ?>
 </body>
 </html>
