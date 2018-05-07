@@ -11,13 +11,24 @@ if ( isset($_GET['search']) ){
 }
 
 //calculate distance
-$addressFrom = 'Hondstraatje 9, 3460 Bekkevoort';
-$addressTo = 'Lange Schipstraat 51, 2800 Mechelen';
-$unit = "K";
+$address = Handelaar::getAddress();
+$straatnaam = $address['straatnaam'];
+$huisnr = $address['huisnummer'];
+$postcode = $address['postcode'];
+$gemeente = $address['gemeente'];
 
-$calculateDis = Product::getDistance($addressFrom, $addressTo, $unit);
-var_dump($calculateDis);
+var_dump($straatnaam);
+var_dump($huisnr);
+var_dump($postcode);
+var_dump($gemeente);
 
+ $addressFrom = 'Hondstraatje 9, 3460 Bekkevoort';
+ $addressTo = $straatnaam . " " . $huisnr . ", " . $postcode . " " . $gemeente;
+ $unit = "K";
+
+ $calculateDis = Product::getDistance($addressFrom, $addressTo, $unit);
+ var_dump($calculateDis);
+ var_dump($addressTo);
 
 ?><!DOCTYPE html>
 <?php include_once("head.inc.php"); ?>
@@ -60,5 +71,6 @@ var_dump($calculateDis);
 
    <?php include_once("nav.inc.php"); ?>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="script/getLocation.js"></script>
 </body>
 </html>

@@ -1,4 +1,5 @@
 <?php
+
 //if latitude and longitude are submitted
 if(!empty($_POST['latitude']) && !empty($_POST['longitude'])){
     //send request and receive json data by latitude and longitude

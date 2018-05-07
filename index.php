@@ -9,14 +9,6 @@
 
     }
 
-        //calculate distance
-        $addressFrom = 'Hondstraatje 9, 3460 Bekkevoort';
-        $addressTo = 'Lange Schipstraat 51, 2800 Mechelen';
-        $unit = "K";
-
-        $calculateDis = Product::getDistance($addressFrom, $addressTo, $unit);
-        var_dump($calculateDis);
-
 
 ?><!DOCTYPE html>
 <?php include_once("head.inc.php"); ?>
@@ -91,32 +83,7 @@
 
        <?php include_once("nav.inc.php"); ?>
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-       <script>
-            $(document).ready(function(){
-                if(navigator.geolocation){
-                    navigator.geolocation.getCurrentPosition(showLocation);
-                }else{ 
-                    $('#location').html('Geolocation is not supported by this browser.');
-                }
-            });
-
-            function showLocation(position){
-                var latitude = position.coords.latitude;
-                var longitude = position.coords.longitude;
-                $.ajax({
-                    type:'POST',
-                    url:'ajax/getLocation.php',
-                    data:'latitude='+latitude+'&longitude='+longitude,
-                    success:function(msg){
-                        if(msg){
-                            $("#location").html(msg);
-                        }else{
-                            $("#location").html('Not Available');
-                        }
-                    }
-                });
-            }
-</script>
+       <script src="script/getLocation.js"></script>
 
 </body>
 </html>

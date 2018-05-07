@@ -17,6 +17,17 @@ include_once('Db.class.php');
             
         }
 
+        public static function getAddress()
+        {
+            //get address
+            $conn = Db::getInstance();
+            $stmt = $conn->prepare("SELECT straatnaam, huisnummer, postcode, gemeente FROM adres");
+            $stmt->execute();
+            $address = $stmt->fetch(PDO::FETCH_ASSOC);
+            
+            return $address;
+        }
+
 
     }
 ?>
