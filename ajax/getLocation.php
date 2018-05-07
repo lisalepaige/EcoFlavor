@@ -16,6 +16,8 @@ if(!empty($_POST['latitude']) && !empty($_POST['longitude'])){
     }
     
     //return address to ajax 
-    echo $location;
+    header('Content-Type: application/json');
+    echo json_encode($location);
+    
 }
 ?>

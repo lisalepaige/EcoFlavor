@@ -6,11 +6,23 @@
         $product = Product::searchProduct($search);  
 
         header("Location: search.php?search=$search");
-}
+
+    }
+
+        //calculate distance
+        $addressFrom = 'Hondstraatje 9, 3460 Bekkevoort';
+        $addressTo = 'Lange Schipstraat 51, 2800 Mechelen';
+        $unit = "K";
+
+        $calculateDis = Product::getDistance($addressFrom, $addressTo, $unit);
+        var_dump($calculateDis);
+
 
 ?><!DOCTYPE html>
 <?php include_once("head.inc.php"); ?>
 <body>
+
+<p>Your Location: <span id="location"></span></p>
     
 <header>
         <a href="index.php"><img src="images/home.png" alt="home" class="header__home"></a>
@@ -23,8 +35,6 @@
         <input type=image src=images/search.png alt="Submit">
     </form>
     </div>
-
-    <p>Your Location: <span id="location"></span></p>
 
    <div class="maand">
         <h1 class="maand__h1">Product van de maand</h1>
@@ -107,5 +117,6 @@
                 });
             }
 </script>
+
 </body>
 </html>

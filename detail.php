@@ -10,6 +10,14 @@
     $product = Product::ShowProduct(); 
     
 
+    //calculate distance
+    $addressFrom = 'Hondstraatje 9, 3460 Bekkevoort';
+    $addressTo = 'Lange Schipstraat 51, 2800 Mechelen';
+    $unit = "K";
+
+    $calculateDis = Product::getDistance($addressFrom, $addressTo, $unit);
+    var_dump($calculateDis);
+
 ?><!DOCTYPE html>
 
 <?php include_once("head.inc.php"); ?>

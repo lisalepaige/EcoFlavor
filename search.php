@@ -10,6 +10,15 @@ if ( isset($_GET['search']) ){
     $product = Product::searchProduct($search);        
 }
 
+//calculate distance
+$addressFrom = 'Hondstraatje 9, 3460 Bekkevoort';
+$addressTo = 'Lange Schipstraat 51, 2800 Mechelen';
+$unit = "K";
+
+$calculateDis = Product::getDistance($addressFrom, $addressTo, $unit);
+var_dump($calculateDis);
+
+
 ?><!DOCTYPE html>
 <?php include_once("head.inc.php"); ?>
 <body>
@@ -40,7 +49,7 @@ if ( isset($_GET['search']) ){
                 <?php if ($p['verificatie'] == 1): ?>
                     <img src="images/verificatie.png" alt="verificatie" class="searchP__v"></p>
                 <?php endif; ?>
-                <p class="searchP__afstand">600m</p>
+                <p class="searchP__afstand"><?php echo $calculateDis; ?></p>
                 <p class="searchP__prijs">€ <?php echo $p['product_prijs']; ?></p>
             </div>  
             <a href="detail.php?id=<?php echo $p['id']; ?>" class="btn btn--searchP">Lees Meer<span class="border"></span></a>
