@@ -15,7 +15,7 @@
     var_dump($map);
     
     //calculate distance
-    $address = Handelaar::getAddress();
+    $address = Handelaar::getAddress($id);
     $straatnaam = $address['straatnaam'];
     $huisnr = $address['huisnummer'];
     $postcode = $address['postcode'];

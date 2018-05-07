@@ -11,7 +11,7 @@ if ( isset($_GET['search']) ){
 }
 
 //calculate distance
-$address = Handelaar::getAddress();
+$address = Handelaar::getAddress($id);
 $straatnaam = $address['straatnaam'];
 $huisnr = $address['huisnummer'];
 $postcode = $address['postcode'];

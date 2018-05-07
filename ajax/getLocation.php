@@ -13,7 +13,7 @@ if(!empty($_POST['latitude']) && !empty($_POST['longitude'])){
         //get address from json data
         $location = $data->results[0]->formatted_address;
     }else{
-        $location =  '';
+        $location =  'poop';
     }
     
     //return address to ajax 
