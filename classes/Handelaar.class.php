@@ -17,13 +17,10 @@ include_once('Db.class.php');
             
         }
 
-        public static function getAddress($id)
+        public static function getAddress()
         {
             $conn = Db::getInstance();
-            $stmt = $conn->prepare("SELECT straatnaam, huisnummer, postcode, gemeente, handelaar.id, product.id, handelaar_id, product_id FROM adres, handelaar, product, producthandelaar
-            WHERE producthandelaar.handelaar_id = handelaar.id 
-            AND producthandelaar.product_id = product.id 
-            AND product.id = :id");
+            $stmt = $conn->prepare("SELECT straatnaam, huisnummer, postcode, gemeente FROM adres");
             $stmt->execute();
             $address = $stmt->fetch(PDO::FETCH_ASSOC);
             
