@@ -17,11 +17,6 @@ $huisnr = $address['huisnummer'];
 $postcode = $address['postcode'];
 $gemeente = $address['gemeente'];
 
-var_dump($straatnaam);
-var_dump($huisnr);
-var_dump($postcode);
-var_dump($gemeente);
-
  $addressFrom = 'Hondstraatje 9, 3460 Bekkevoort';
  $addressTo = $straatnaam . " " . $huisnr . ", " . $postcode . " " . $gemeente;
  $unit = "K";
@@ -56,7 +51,7 @@ var_dump($gemeente);
             <img src="images/<?php echo $p['product_img']; ?>" alt="product" class="searchP__img" >
             <div class="searchP__grid">
                 <h4 class="searchP__pnaam"><?php echo $p['product_naam']; ?></h4>
-                <p class="searchP__hnaam"><?php echo $p['handelaar_naam']; ?>
+                <p class="searchP__hnaam" data-id="<?php echo $p['handelaar_id']; ?>"><?php echo $p['handelaar_naam']; ?>
                 <?php if ($p['verificatie'] == 1): ?>
                     <img src="images/verificatie.png" alt="verificatie" class="searchP__v"></p>
                 <?php endif; ?>

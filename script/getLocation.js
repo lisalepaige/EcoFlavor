@@ -1,9 +1,13 @@
 $(document).ready(function(){
+    var x = document.getElementById("map");
+
+function getLocation() {
     if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition(showLocation);
     }else{ 
         $('#location').html('Geolocation is not supported by this browser.');
     }
+}
 });
 
 function showLocation(position){
@@ -16,6 +20,10 @@ function showLocation(position){
         success:function(msg){
             if(msg){
                 $("#location").html(msg);
+                x.innerHTML = "Latitude: " + position.coords.latitude + 
+                "<br>Longitude: " + position.coords.longitude; 
+
+
             }else{
                 $("#location").html('Not Available');
             }

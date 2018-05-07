@@ -9,13 +9,20 @@
 
     $product = Product::ShowProduct(); 
     
-
+    //get map
+    $viewmap = Handelaar::getMap($id);
+    $map = $viewmap['map'];
+    var_dump($map);
     
     //calculate distance
     $address = Handelaar::getAddress();
+    $straatnaam = $address['straatnaam'];
+    $huisnr = $address['huisnummer'];
+    $postcode = $address['postcode'];
+    $gemeente = $address['gemeente'];
 
-    $addressFrom = 'Lange Schipstraat 51, 2800 Mechelen';
-    $addressTo = $address;
+    $addressFrom = 'Hondstraatje 9, 3460 Bekkevoort';
+    $addressTo = $straatnaam . " " . $huisnr . ", " . $postcode . " " . $gemeente;
     $unit = "K";
 
     $calculateDis = Product::getDistance($addressFrom, $addressTo, $unit);
@@ -99,7 +106,7 @@
 
         </div>
     </div>
-    </main>
+    </main>   
 
     <div class="contact">
         <h3 class="contact__titel">Contact</h3>
@@ -117,6 +124,8 @@
 
     <?php endforeach; ?>
 
+     <iframe width="100%" height="400" src="<?php echo $map ?>"></iframe>
+
     <div class="ecokoerier">
        <div class="eco__flex eco__leveren" >
         <h3 class="eco__titel">Mijn boodschappen thuis laten leveren via de ecokoeriers</h3>
@@ -127,5 +136,9 @@
     <?php include_once("nav.inc.php"); ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script/getLocation.js"></script>
+
+    <script>
+        
+    </script>
 </body>
 </html>
