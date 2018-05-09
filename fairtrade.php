@@ -1,5 +1,12 @@
-<!DOCTYPE html>
+<?php
+
+include_once("classes/Categorie.class.php");
+$fair = Categorie::GetFairtrade();  
+
+?><!DOCTYPE html>
 <?php include_once("head.inc.php"); ?>
+
+
 
 <body>
     <header>
@@ -10,34 +17,18 @@
     <main class="fairtrade">
         <h3>Fairtradeproducten</h3>
         
+
+        <?php foreach($fair as $f): ?>
         <div class="producten">
             
-            <div class="prod pro__banaan">
-                <img src="images/banaan_bananen.jpg" width="200px" alt="bio">
-                <p>Bananen</p>
+            <div class="prod">
+                <img src="images/<?php echo $f['product_img']; ?>" width="200px" alt="bio">
+                <p><?php echo $f['product_naam']; ?></p>
             </div>
             
-            <div class="prod pro__bonen">
-                <img src="images/struik.png" width="200px" alt="streek">
-                <p>Fijne bonen</p>
-            </div>
             
-            <div class="prod pro__mango">
-                <img src="images/mango_s.png" width="200px" alt="seizoen">
-                <p>Mango</p>
-            </div>
-
-            <div class="prod pro__citroen">
-                <img src="images/citroen.jpg" width="200px" alt="seizoen">
-                <p>Citroen</p>
-            </div>
-
-            <div class="prod pro__kiwi">
-                <img src="images/kiwi-2.jpg" width="200px" alt="seizoen">
-                <p>Kiwi</p>
-            </div>
-            </a>
         </div>
+        <?php endforeach; ?>
         
 
 
