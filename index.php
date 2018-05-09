@@ -44,28 +44,28 @@
         <div class="categorie">
             <a href="#">
             <div class="cat cat__bio">
-                <img src="images/bio.png" alt="bio">
+                <img src="images/bioproducten.png" alt="bio">
                 <p>Bio Producten</p>
             </div>
             </a>
 
             <a href="#">
             <div class="cat cat__streek">
-                <img src="images/streek.png" alt="streek">
+                <img src="images/streekproducten.png" alt="streek">
                 <p>Streekproducten</p>
             </div>
             </a>
 
-            <a href="#" class="afair">
+            <a href="fairtrade.php" class="afair">
             <div class="cat cat__fair">
-                <img src="images/fairtrade.png" alt="fairtrade">
+                <img src="images/fairtradeproducten.png" alt="fairtrade">
                 <p>Fairtrade Producten</p>
             </div>
             </a>
 
             <a href="#">
             <div class="cat cat__seizoen">
-                <img src="images/bio.png" alt="seizoen">
+                <img src="images/seizoensproducten.png" alt="seizoen">
                 <p>Seizoensproducten</p>
             </div>
             </a>

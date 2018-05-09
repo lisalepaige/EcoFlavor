@@ -72,14 +72,15 @@ header
     background-image: url("../images/background.png");
     border-bottom-style: solid;
     border-color: #93C01F;
-    border-width: 5px;
-    padding-left: 5px;
+    border-width: 8px;
+    padding-left: 35px; /* 5px */
+padding-top: 30px;
+padding-bottom: 18px;
     margin-top: 20px;
 }
 
 .maand__h1
 {
-    padding-top: 5px;
     margin: 0px;
 }
 
@@ -91,7 +92,7 @@ header
 
 .maand__p
 {
-    width: 270px;
+    width: 270px; /*  270px */
     font-size: 0.9em;
     
 }
@@ -128,9 +129,10 @@ header
    background-color:#93C01F;
 }
 
+
 .categoriën
 {
-    background-color: #F2F2F2;
+    background-color: #F2F2F2; /* grijs achtergrond */
     padding-top: 10px;
     padding-left: 5px;
 
@@ -567,3 +569,15 @@ header
     margin-bottom: 150px;
 }
 
+/* fairtrade.php */
+.fairtrade
+{
+    background-color: #F2F2F2; /* grijs achtergrond */
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.fairtrade h3{
+    color: #4D180C;
+    font-size: 1.8em;
+}
