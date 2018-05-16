@@ -14,21 +14,32 @@ $fair = Categorie::GetFairtrade();
         <a href="instellingen.php"><img src="images/instellingen.png" alt="instellingen"></a>
     </header>
 
+    <div class="search">
+       <form action="" method="get" class="searchNav">
+        <input type="search" name="search" placeholder="zoek jouw product" class="search__input">
+        <input type=image src=images/search.png alt="Submit">
+    </form>
+    </div>
+
     <main class="fairtrade">
         <h3>Fairtradeproducten</h3>
         
 
-        <?php foreach($fair as $f): ?>
+        
         <div class="producten">
             
             <div class="prod">
-                <img src="images/<?php echo $f['product_img']; ?>" width="200px" alt="bio">
-                <p><?php echo $f['product_naam']; ?></p>
+            <?php foreach($fair as $f): ?>
+            <div class="prod__grid">
+                <img class="prod__img" src="images/<?php echo $f['groep_image']; ?>" alt="bio">
+                <p><?php echo $f['groep_naam']; ?></p>
+            </div>
+            <?php endforeach; ?>
             </div>
             
             
         </div>
-        <?php endforeach; ?>
+        
         
 
 
