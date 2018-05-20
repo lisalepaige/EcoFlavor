@@ -31,7 +31,7 @@ $fair = Categorie::GetFairtrade();
             <div class="prod">
             <?php foreach($fair as $f): ?>
             <div class="prod__grid">
-                <a href="search.php">
+                <a href="search.php?search=<?php echo $s['groep_naam']; ?>">
                     <img class="prod__img" src="images/<?php echo $f['groep_image']; ?>" alt="fairtrade">
                     <p><?php echo $f['groep_naam']; ?></p>
                 </a>

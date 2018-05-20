@@ -28,7 +28,7 @@ $streek = Categorie::GetStreek();
             <div class="prod">
             <?php foreach($streek as $s): ?>
             <div class="prod__grid">
-                <a href="search.php">
+                <a href="search.php?search=<?php echo $s['groep_naam']; ?>">
                     <img class="prod__img" src="images/<?php echo $s['groep_image']; ?>" alt="streek">
                     <p><?php echo $s['groep_naam']; ?></p>
                 </a>

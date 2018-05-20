@@ -29,7 +29,7 @@ $seizoen = Categorie::GetSeizoen();
             <div class="prod">
             <?php foreach($seizoen as $s): ?>
             <div class="prod__grid">
-                <a href="search.php">
+                <a href="search.php?search=<?php echo $s['groep_naam']; ?>">
                     <img class="prod__img" src="images/<?php echo $s['groep_image']; ?>" alt="seizoen">
                     <p><?php echo $s['groep_naam']; ?></p>
                 </a>
