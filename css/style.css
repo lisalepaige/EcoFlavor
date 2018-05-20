@@ -70,12 +70,12 @@ header
 {
     color: white;
     background-image: url("../images/background.png");
+    background-repeat: repeat-x, no-repeat;
     border-bottom-style: solid;
     border-color: #93C01F;
     border-width: 8px;
     padding-left: 35px; /* 5px */
-padding-top: 30px;
-padding-bottom: 18px;
+    padding-top: 30px;
     margin-top: 20px;
 }
 
@@ -109,8 +109,9 @@ padding-bottom: 18px;
     background-color: #93C01F;
     width: 100px;
     height: 20px;
-    margin-top: 80px;
+    margin-top: 70px;
     margin-left: 80px;
+    margin-right: 20px;
     color: white;  
     text-align: center;
     text-decoration: none;
@@ -182,26 +183,29 @@ padding-bottom: 18px;
 
 .cat__bio
 {
-    padding-left: 35px;
-    padding-right: 35px;
-    margin-bottom: 9px;
+    padding-left: 43px;
+    padding-right: 43px;
+    margin-bottom: 5px;
     padding-bottom: 15px;
 }
 
 .cat__streek
 {
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 43px;
+    padding-right: 43px;
     background-color: #8C1A14;
-    margin-bottom: 9px;
+    margin-bottom: 5px;
     padding-bottom: 15px;
 }
 .cat__seizoen
 {
     display: grid;
     grid-column: 0 / 1;
+    justify-self: center;
+    align-self: center;
     background-color: #F29100;
     padding-bottom: 15px;
+    text-align: center;
 }
 
 .cat__seizoen img
@@ -209,6 +213,12 @@ padding-bottom: 18px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 25px;
+}
+
+.cat__seizoen p
+{
+    text-align: center;
     padding-left: 25px;
 }
 
@@ -230,7 +240,8 @@ padding-bottom: 18px;
     display: grid;
     grid-column: 1 / 1; 
     background-color: #EB6608;
-    
+    justify-self: center;
+    align-self: center;    
 }
 
 .afair 
@@ -246,6 +257,7 @@ padding-bottom: 18px;
     background-position: bottom;
     background-size: cover;
     max-width: 100%;
+    height: 350px;
 }
 
 .eco__flex
@@ -267,14 +279,16 @@ padding-bottom: 18px;
 .eco__p
 {
     color: #666666;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
+    font-size: 0.9em;
 }
 
 .btn--eco
 {
     margin-top: 0px;
-    margin-left: 145px;
-    margin-bottom: 170px;
+    margin-left: 100px;
+    margin-bottom: 140px;
+    margin-right: 20px;
 }
 
 /* search.php */

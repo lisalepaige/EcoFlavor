@@ -39,7 +39,7 @@
         het zorgt voor een rijkere en zachtere smaak. 
         Een prei is ook ideaal als basis voor een soep,
         maar het kan evengoed gestoomd of gebakken worden in boter.</p>
-        <a href="maandProduct.php" class="btn">Lees Meer<span class="border"></span></a>
+        <a href="maandProduct.php" class="btn btn--maand">Lees Meer<span class="border"></span></a>
         </div>
    </div>
    <main class="categoriën">
