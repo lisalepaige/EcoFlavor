@@ -1,4 +1,12 @@
-<!DOCTYPE html>
+<?php
+
+spl_autoload_register(function($class) {
+    include_once("classes/" . $class . ".class.php");
+});
+
+$winkelmand = User::getWinkelmandje();
+
+?><!DOCTYPE html>
 <?php include_once("head.inc.php"); ?>
 <body>
 
@@ -17,27 +25,27 @@
        </div>
 </div>
 
-<main class="">
+<main class="winkelmand">
 
-        <?php foreach($found as $f): ?>
+        <?php foreach($winkelmand as $w): ?>
 
-        <div class="searchP__list">
-            <img src="images/<?php echo $f['product_img']; ?>" alt="product" class="searchP__img" >
-            <div class="searchP__grid">
-                <h4 class="searchP__pnaam" data-groep="<?php echo $f['groep_naam']; ?>"><?php echo $f['product_naam']; ?></h4>
-                <p class="searchP__hnaam" data-id="<?php echo $f['handelaar_id']; ?>"><?php echo $f['handelaar_naam']; ?>
-                <?php if ($f['verificatie'] == 1): ?>
+        <div class="searchP__list winkelmand__list">
+            <img src="images/<?php echo $w['product_img']; ?>" alt="product" class="searchP__img winkelmand__img" >
+            <div class="searchP__grid winkelmand__grid">
+                <h4 class="searchP__pnaam" data-groep="<?php echo $w['groep_naam']; ?>"><?php echo $w['product_naam']; ?></h4>
+                <p class="searchP__hnaam" data-id="<?php echo $w['handelaar_id']; ?>"><?php echo $w['handelaar_naam']; ?>
+                <?php if ($w['verificatie'] == 1): ?>
                     <img src="images/verificatie.png" alt="verificatie" class="searchP__v"></p>
                 <?php endif; ?>
-                <p class="searchP__afstand"><?php echo $calculateDis; ?></p>
-                <p class="searchP__prijs">€ <?php echo $f['product_prijs']; ?></p>
+                <p class="searchP__prijs">Totaalprijs: € <?php echo $w['totaalprijs']; ?></p>
 
-            </div>  
-            <a href="#" class="btn afrekenen">Afrekenen<span class="border"></span></a>
-        </div>
         <?php endforeach; ?>
 
     </main>
+
+    </div>  
+            <a href="#" class="btn--bestelling afrekenen">Afrekenen<span class="border"></span></a>
+    </div>
 
    <?php include_once("nav.inc.php"); ?>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

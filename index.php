@@ -1,5 +1,8 @@
 <?php
-    include_once("classes/Product.class.php");
+  
+  spl_autoload_register(function($class) {
+    include_once("classes/" . $class . ".class.php");
+});
 
     if ( isset($_GET['search']) ){
         $search = $_GET['search'];

@@ -718,9 +718,27 @@ padding-bottom: 18px;
     padding-left: 315px;
 }
 
+/* winkelmand.php */
 
+.winkelmand
+{
+    margin: 20px;
+}
 
+.winkelmand__img
+{
+    margin-right: 20px;
+}
 
+.winkelmand__grid
+{
+    margin-left: 20px;
+}
+
+.winkelmand__list
+{
+    grid-template-columns: 35% 60% ;
+}
 
 
 

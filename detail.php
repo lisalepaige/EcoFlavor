@@ -1,6 +1,7 @@
 <?php
-    include_once("classes/Product.class.php");
-    include_once("classes/Handelaar.class.php");
+    spl_autoload_register(function($class) {
+        include_once("classes/" . $class . ".class.php");
+    });
 
     $id = $_GET['id'];
 

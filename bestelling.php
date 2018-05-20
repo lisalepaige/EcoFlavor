@@ -1,7 +1,8 @@
 <?php
 
-    include_once("classes/Product.class.php");
-    include_once("classes/Handelaar.class.php");
+spl_autoload_register(function($class) {
+    include_once("classes/" . $class . ".class.php");
+});
 
 $id = $_GET['id'];
 $oneProduct = Product::ShowOne($id);
@@ -46,7 +47,7 @@ $oneProduct = Product::ShowOne($id);
     
 
         <div class="bestelling">
-            <a href="#" class="btn--bestelling winkelmand">In Winkelmand<span class="border-bestelling"></span></a>
+            <a href="winkelmandje.php" class="btn--bestelling winkelmand">In Winkelmand<span class="border-bestelling"></span></a>
         </div> 
 <?php endforeach; ?>
 </div>
