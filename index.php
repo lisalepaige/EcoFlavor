@@ -49,7 +49,7 @@
             </div>
             </a>
 
-            <a href="#">
+            <a href="streek.php">
             <div class="cat cat__streek">
                 <img src="images/streekproducten.png" alt="streek">
                 <p>Streekproducten</p>
@@ -63,7 +63,7 @@
             </div>
             </a>
 
-            <a href="#">
+            <a href="seizoen.php">
             <div class="cat cat__seizoen">
                 <img src="images/seizoensproducten.png" alt="seizoen">
                 <p>Seizoensproducten</p>
