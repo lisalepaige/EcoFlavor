@@ -27,20 +27,5 @@ include_once('Db.class.php');
             return $address;
         }
 
-        public static function getMap($id)
-        {
-            $conn = Db::getInstance();
-            $stmt = $conn->prepare("SELECT handelaar.id, product.id, map, handelaar_id, product_id FROM handelaar, product, producthandelaar 
-            WHERE producthandelaar.handelaar_id = handelaar.id 
-            AND producthandelaar.product_id = product.id 
-            AND product.id = :id");
-            $stmt->bindValue(":id", $id);
-            $stmt->execute();
-            $map = $stmt->fetch(PDO::FETCH_ASSOC);
-            
-            return $map;
-        }
-
-
     }
 ?>

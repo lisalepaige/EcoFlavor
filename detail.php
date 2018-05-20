@@ -9,10 +9,6 @@
 
     $product = Product::ShowProduct(); 
     
-    //get map
-    $viewmap = Handelaar::getMap($id);
-    $map = $viewmap['map'];
-    var_dump($map);
     
     //calculate distance
     $address = Handelaar::getAddress();
@@ -124,7 +120,7 @@
 
     <?php endforeach; ?>
 
-     <iframe width="100%" height="400" src="<?php echo $map ?>"></iframe>
+     <iframe width="100%" height="400" src="https://www.google.com/maps/d/embed?mid=1Eag-ZvBjx0diin672vKObDZPkVldw7ez"></iframe>
 
     <div class="ecokoerier">
        <div class="eco__flex eco__leveren" >

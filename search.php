@@ -11,7 +11,7 @@ if ( isset($_GET['search']) ){
 }
 
 //calculate distance
-$address = Handelaar::getAddress($id);
+$address = Handelaar::getAddress();
 $straatnaam = $address['straatnaam'];
 $huisnr = $address['huisnummer'];
 $postcode = $address['postcode'];
@@ -30,7 +30,7 @@ $gemeente = $address['gemeente'];
 <body>
 
     <header>
-    <a href="index.php"><img src="images/arrow.png" alt="back"></a>
+        <a href="index.php"><img src="images/arrow.png" alt="back"></a>
         <a href="index.php"><img src="images/home.png" alt="home" class="header__home"></a>
         <a href="instellingen.php"><img src="images/instellingen.png" alt="instellingen"></a>
 </header>
