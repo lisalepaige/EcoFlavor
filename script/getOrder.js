@@ -1,4 +1,4 @@
-$(".winkelmand").on('click', function(e){
+$("#bestellen").on('click', function(e){
     var product_id = $('.best__h4').attr("data-id");
     var handelaar_id = $('.best__h4').attr("data-id");
     var totaalprijs = document.querySelector(".span--totaal").innerHTML;

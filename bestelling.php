@@ -47,7 +47,7 @@ $oneProduct = Product::ShowOne($id);
     
 
         <div class="bestelling">
-            <a href="winkelmandje.php" class="btn--bestelling winkelmand">In Winkelmand<span class="border-bestelling"></span></a>
+            <a href="winkelmandje.php" id="bestellen" class="btn btn--bestelling btn--winkelmand">In Winkelmand<span class="border-bestelling"></span></a>
         </div> 
 <?php endforeach; ?>
 </div>

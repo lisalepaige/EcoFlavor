@@ -36,6 +36,11 @@ header
     margin-bottom: 5px;
 }
 
+.nav__mand
+{
+    margin-top: 4px;
+}
+
 .search__input
 {
     background-color: #93C01F;
@@ -393,6 +398,7 @@ header
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 10px;
 }
 
 .information
@@ -458,6 +464,7 @@ header
     margin-right: auto;
     margin-left: auto;
     padding-top: 10px;
+    padding-bottom: 10px;
     background-color: #93C01F;
     color: white;
     text-decoration: none;
@@ -469,10 +476,11 @@ header
 .border-bestelling
 {
     display: block;
-    width: 300px;
-    border-bottom: 2px solid greenyellow;
-    height: 3px;
-    margin-top: 9px;
+    width: 306px;
+    margin-left: -3px;
+    border-bottom: 2px solid #93C01F;
+    height: 5px;
+    margin-top: 12px;
 }
 
 .uren
@@ -573,14 +581,15 @@ header
 {
     color: #EB6608;
     margin-left: -200px;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
+    margin-top: 50px;
     margin-bottom: 0px;
 }
 
 .btn--leveren
 {
-    margin-top: 0px;
-    margin-bottom: 150px;
+    margin-top: 40px;
+    margin-bottom: 120px;
 }
 
 /* fairtrade.php */
@@ -691,6 +700,7 @@ header
 {
     margin-left: 20px;
     margin-right: 20px;
+    padding-bottom: 10px;
 }
 
 .best__img
@@ -730,13 +740,55 @@ header
 .span--totaal
 {
     padding-left: 315px;
+    margin-bottom: 60px;
+}
+
+.btn--winkelmand
+{
+    margin-top: 60px;
+    margin: 20px;
 }
 
 /* winkelmand.php */
+.koerier__winkelmand
+{
+    height: 250px;
+}
+
+.eco__winkelmand
+{
+    margin-bottom: -30px;
+}
+
+.best__ecotitel
+{
+    margin-left: -220px;
+    margin-bottom: 0px;
+}
+
+.btn--ecowinkelmand
+{
+    margin-top: 50px;
+    margin-bottom: -20px;
+}
+
+.border--mand
+{
+    height: 3px;
+    width: 300px;
+    margin-top: 18px;
+}
+
+.afrekenen
+{
+    margin-bottom: 30px;
+    margin-top: -10px;
+}
 
 .winkelmand
 {
     margin: 20px;
+    margin-bottom: 40px;
 }
 
 .winkelmand__img

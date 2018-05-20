@@ -18,16 +18,15 @@ $winkelmand = User::getWinkelmandje();
 
 <h3 class="best__h3">Winkelmandje</h3>
 
-<div class="ecokoerier">
-       <div class="eco__flex">
-        <h3 class="eco__h3">Mijn boodschappen thuis laten leveren via ecokoeriers</h3>
-        <a href="ecokoeriers.php" class="btn btn--eco">Leveren<span class="border border--eco"></span></a>
+<div class="ecokoerier koerier__winkelmand">
+       <div class="eco__flex eco__winkelmand">
+        <h3 class="eco__h3 best__ecotitel">Mijn boodschappen thuis laten leveren via ecokoeriers</h3>
+        <a href="ecokoeriers.php" class="btn btn--eco btn--ecowinkelmand">Leveren<span class="border border--eco"></span></a>
        </div>
 </div>
 
-<main class="winkelmand">
-
-        <?php foreach($winkelmand as $w): ?>
+<?php foreach($winkelmand as $w): ?>
+    <main class="winkelmand">
 
         <div class="searchP__list winkelmand__list">
             <img src="images/<?php echo $w['product_img']; ?>" alt="product" class="searchP__img winkelmand__img" >
@@ -39,12 +38,14 @@ $winkelmand = User::getWinkelmandje();
                 <?php endif; ?>
                 <p class="searchP__prijs">Totaalprijs: € <?php echo $w['totaalprijs']; ?></p>
 
-        <?php endforeach; ?>
+        
 
     </main>
+    <?php endforeach; ?>
+
 
     </div>  
-            <a href="#" class="btn--bestelling afrekenen">Afrekenen<span class="border"></span></a>
+            <a href="#" id="afrekenen" class="btn btn--bestelling afrekenen">Afrekenen<span class="border border-bestelling border--mand"></span></a>
     </div>
 
    <?php include_once("nav.inc.php"); ?>
