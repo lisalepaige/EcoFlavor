@@ -615,3 +615,120 @@ padding-bottom: 18px;
     width: 60%;
     object-fit: cover;
 }
+
+/* bestelling.php */
+
+.best_aantal
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.controls{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 300px;
+    height: 48px;
+}
+
+.controls a{
+    display: inline-block;
+    padding: 2px 10px;
+    border: 1px solid #8C1A14;
+    color: #8C1A14;
+    text-decoration: none;
+    margin: 5px;
+    margin-top: 15px;
+    padding-bottom: 5px;
+}
+
+.controls a:first-child{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.controls a:last-child{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.bestellingpage
+{
+    background-color: #F2F2F2;
+}
+
+.main__best
+{
+    background-color: white;
+    margin-top: -20px;
+    padding-bottom: 20px;
+}
+
+.section__best
+{
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #4D180C;
+}
+
+.bestelling
+{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.best__img
+{
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.best__h4
+{
+    color: #EB6608;
+    margin-left: 20px;   
+    padding-top: 20px;
+}
+
+.best__h3
+{
+    color: #4D180C;
+    margin-left: 20px;
+    font-size: 1.4em;
+}
+
+.best__stukprijs
+{
+    padding-top: 20px;
+   
+}
+
+.best__span
+{
+    padding-left: 300px;
+    text-align: right;
+}
+
+.span--totaal
+{
+    padding-left: 315px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
