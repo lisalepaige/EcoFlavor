@@ -70,7 +70,7 @@
         </div>
 
         <div class="bestelling">
-        <a href=".php" class="btn--bestelling">Bestelling plaatsen<span class="border-bestelling"></span></a>
+        <a href="bestelling.php?id=<?php echo $p['id']; ?>" class="btn--bestelling">Bestelling plaatsen<span class="border-bestelling"></span></a>
         </div>  
     </div>
 
