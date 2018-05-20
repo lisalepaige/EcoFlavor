@@ -3,9 +3,6 @@ $( document ).ready(function() {
     document.querySelector(".span--totaal").innerHTML = tot;
 });
 
-
-
-
 var min = document.querySelector(".min");
 var plus = document.querySelector(".plus");
 var aantal = document.querySelector(".qty");
@@ -13,7 +10,7 @@ var prijs = document.querySelector(".best__span").innerHTML;
 
 var teller = aantal.innerHTML;
 
-console.log(prijs);
+//console.log(prijs);
 
 min.addEventListener("click", function(e){
     e.preventDefault;

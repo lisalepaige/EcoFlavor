@@ -18,8 +18,8 @@ $oneProduct = Product::ShowOne($id);
 
 <main class="main__best">
 <?php foreach($oneProduct as $p): ?>
-    <h4 class="best__h4"><?php echo $p['handelaar_naam']; ?></h4>
-    <h3 class="best__h3"><?php echo $p['product_naam']; ?></h3>
+    <h4 class="best__h4" data-id="<?php echo $p['handelaar_id']; ?>"><?php echo $p['handelaar_naam']; ?></h4>
+    <h3 class="best__h3" data-id="<?php echo $p['product_id']; ?>"><?php echo $p['product_naam']; ?></h3>
     <img class="best__img" src="images/<?php echo $p['product_img']; ?>" alt="product">
 <?php endforeach; ?>
 </main>
@@ -46,15 +46,16 @@ $oneProduct = Product::ShowOne($id);
     
 
         <div class="bestelling">
-            <a href="winkelmand.php" class="btn--bestelling">In Winkelmand<span class="border-bestelling"></span></a>
+            <a href="#" class="btn--bestelling winkelmand">In Winkelmand<span class="border-bestelling"></span></a>
         </div> 
 <?php endforeach; ?>
 </div>
 </section>
 
  <?php include_once("nav.inc.php"); ?>
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-       <script src="script/getPrice.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script/getPrice.js"></script>
+    <script src="script/getOrder.js"></script>
 
 </body>
 </html>
