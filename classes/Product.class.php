@@ -48,10 +48,14 @@ include_once('Db.class.php');
             public static function searchProduct($search){
 
                     $conn = Db::getInstance();
-                    $statement = $conn->prepare("SELECT * FROM product, handelaar, producthandelaar WHERE producthandelaar.handelaar_id = handelaar.id AND producthandelaar.product_id = product.id ");
-                        
-                        $statement->execute();
-                        $product = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+                    $statement = $conn->prepare("SELECT * FROM product, handelaar, producthandelaar WHERE producthandelaar.handelaar_id = handelaar.id AND producthandelaar.product_id = product.id ");  
+                    $statement->execute();
+                    $product = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+                    $stmt = $conn->prepare("SELECT * FROM product, handelaar, producthandelaar, groep WHERE producthandelaar.handelaar_id = handelaar.id AND producthandelaar.product_id = product.id AND product.groep_id = groep.groep_id");
+                    $stmt->execute();
+                    $groep = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
                         $foundProduct = [];
                         foreach($product as $p){
@@ -59,6 +63,12 @@ include_once('Db.class.php');
                                     $foundProduct[] = $p;
                                 }                                
                         }
+                        foreach($groep as $g){
+                            if(strpos(strtolower($g['groep_naam']), strtolower($search)) !== false){
+                                    $foundPosts[] = $g;
+                            }
+
+                    }
 
                         return $foundProduct;
             }

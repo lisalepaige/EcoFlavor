@@ -42,10 +42,10 @@
    <main class="categoriën">
         <h3>Categorieën</h3>
         <div class="categorie">
-            <a href="#">
+            <a href="bio.php">
             <div class="cat cat__bio">
                 <img src="images/bioproducten.png" alt="bio">
-                <p>Bio Producten</p>
+                <p>Bioproducten</p>
             </div>
             </a>
 

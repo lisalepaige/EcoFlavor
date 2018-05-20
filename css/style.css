@@ -586,10 +586,11 @@ padding-bottom: 18px;
 {
     display: grid;
     grid-template-columns: 45% 45%;
-    grid-template-rows: 100px;
+    
     grid-column: 1 / 2;
     grid-auto-flow: row;
     margin-bottom: 20px;
+    grid-gap: 5px;
 }
 
 .prod__grid
@@ -603,7 +604,14 @@ padding-bottom: 18px;
         margin-bottom: 10px;
 }
 
+.prod__grid a
+{
+    color: black;
+    text-decoration: none;
+}
+
 .prod__img
 {
-    width: 40%;
+    width: 60%;
+    object-fit: cover;
 }

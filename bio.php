@@ -1,11 +1,10 @@
 <?php
 
 include_once("classes/Categorie.class.php");
-$fair = Categorie::GetFairtrade();  
+$bio = Categorie::GetBio();  
 
 ?><!DOCTYPE html>
 <?php include_once("head.inc.php"); ?>
-
 
 
 <body>
@@ -22,18 +21,16 @@ $fair = Categorie::GetFairtrade();
     </div>
 
     <main class="fairtrade">
-        <h3>Fairtradeproducten</h3>
-        
-
+        <h3>Bioproducten</h3>
         
         <div class="producten">
             
             <div class="prod">
-            <?php foreach($fair as $f): ?>
+            <?php foreach($bio as $b): ?>
             <div class="prod__grid">
                 <a href="search.php">
-                    <img class="prod__img" src="images/<?php echo $f['groep_image']; ?>" alt="fairtrade">
-                    <p><?php echo $f['groep_naam']; ?></p>
+                    <img class="prod__img" src="images/<?php echo $b['groep_image']; ?>" alt="bio">
+                    <p><?php echo $b['groep_naam']; ?></p>
                 </a>
             </div>
             <?php endforeach; ?>
@@ -41,10 +38,7 @@ $fair = Categorie::GetFairtrade();
             
             
         </div>
-        
-        
-
-
+ 
     </main>
 
     <?php include_once("nav.inc.php"); ?>
