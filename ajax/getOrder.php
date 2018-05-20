@@ -10,7 +10,7 @@ include_once("../classes/Handelaar.class.php");
             $totaalprijs = $_POST['totaalprijs'];
 
             $w = new User();
-            $w->SaveWinkelmandje($totaalprijs, $product_id, $handelaar_id);
+            $w->SaveWinkelmandje($product_id, $handelaar_id, $totaalprijs);
         
             $response['status'] = 'success';
         
