@@ -27,5 +27,15 @@ include_once('Db.class.php');
             return $address;
         }
 
+        public static function getHandelaars()
+        {
+            $conn = Db::getInstance();
+            $stmt = $conn->prepare("SELECT handelaar_naam FROM handelaar");
+            $stmt->execute();
+            $winkel = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            
+            return $winkel;
+        }
+
     }
 ?>

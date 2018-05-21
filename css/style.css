@@ -867,8 +867,56 @@ header
     margin-top: 100px;
 }
 
+/* ecokoeriers.php */
+.center
+{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
 
+.form__eco
+{
+    background-color: white;
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.label__eco
+{
+    font-weight: bold;
+    color: #4D180C;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input__eco
+{
+    border: 2px solid #62822C;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 300px;
+}
+
+.input__naam
+{
+    width: 135px;
+}
+
+.input__select
+{
+    width: 325px;
+}
+
+.input__levertijd
+{
+    width: 160px;
+}
 
 
 
