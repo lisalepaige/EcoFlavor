@@ -830,6 +830,11 @@ header
     margin-top: 5px;
 }
 
+.bancontact
+{
+    margin-left: 180px;
+}
+
 .paypal
 {
     margin-left: 220px;
@@ -1073,5 +1078,128 @@ header
     {
         padding-top: 0px;
     }
+
+    /* search */
+
+    .searchP__list
+    {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+    }
+
+    .searchP__img
+    {
+        display: grid;
+        grid-column-start: span 2;
+        width: 100%;
+    }
+
+    .searchP__pnaam
+    {
+        font-size: 0.9em;
+    }    
+
+    /* detail */
+    .detail__img
+    {
+        width: 100%;
+    }
+
+    .info
+    {
+        margin-left: 25px;
+    }
+
+    .btn--bestelling
+    {
+        width: 200px;
+    }
+
+    .border-bestelling
+    {
+        width: 207px;
+    }
+
+    .dagen
+    {
+        width: 150px;
+        margin-left: 55px;
+    }
+
+    .ecodetail__titel
+    {
+        margin-left: 30px;
+    }
+
+    /* bestelling.php */
+
+    .best__span
+    {
+        padding-left: 120px;
+    }
+
+    .span--totaal
+    {
+        padding-left: 130px;
+    }
+
+    .controls
+    {
+        margin: 0px;
+        margin-left: 120px;
+    }
+
+    /* winkelmandje */
+
+    .best__ecotitel
+    {
+        margin-left: 20px;
+        margin-top: 0px;
+    }
+
+    .btn--ecowinkelmand
+    {
+        margin-top: 20px;
+    }
+
+    .koerier__winkelmand
+    {
+        margin-bottom: 20px;
+    }
+
+    .winkelmand__list
+    {
+        display: grid;
+        grid-template-columns: 100%;
+        padding: 10px;
+        margin-left: -15px;
+        margin-bottom: -25px;
+        width: 260px;
+    }
+
+    .border--mand
+    {
+        width: 202px;
+        height: 2px;
+    }
+
+    /* afrekenen.php */
+
+    .rekening__img
+    {
+        margin-left: 20px;
+    }
+
+    .paypal
+    {
+        margin-left: 60px;
+    }
+
+    .visa
+    {
+        margin-left: 35px;
+    }
+
 }
 

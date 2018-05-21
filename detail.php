@@ -39,13 +39,6 @@
     <a href="instellingen.php"><img src="images/instellingen.png" alt="instellingen"></a>
 </header>
 
-   <div class="search">
-       <form action="" method="get" class="searchNav">
-        <input type="search" name="search" placeholder="zoek jouw product" class="search__input">
-        <input type=image src=images/search.png alt="Submit">
-    </form>
-    </div>
-
 <main>
     <?php foreach($oneProduct as $p): ?>
 
@@ -125,7 +118,7 @@
 
     <div class="ecokoerier">
        <div class="eco__flex eco__leveren" >
-        <h3 class="eco__titel">Mijn boodschappen thuis laten leveren via de ecokoeriers</h3>
+        <h3 class="eco__titel ecodetail__titel">Mijn boodschappen thuis laten leveren via de ecokoeriers</h3>
         <a href="ecokoeriers.php" class="btn btn--leveren">Leveren<span class="border border--eco"></span></a>
        </div>
        </div>

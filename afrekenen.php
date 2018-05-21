@@ -23,8 +23,8 @@ spl_autoload_register(function($class) {
     <h5 class="betaal__h5">Selecteer betaalmethode</h5>
     <div class="rekening__flex">
         <input type="radio" id="bancontact" class="radioButton" name="betaalmethode">
-        <label for="betaalmethode">Bancontact Mister Cash</label>
-        <img src="images/bankcontact.png" alt="bancontact" class="rekening__img">
+        <label for="betaalmethode">Bancontact</label>
+        <img src="images/bankcontact.png" alt="bancontact" class="rekening__img bancontact"> 
     </div>
     <div class="rekening__flex">
         <input type="radio" id="paypal" class="radioButton" name="betaalmethode">
@@ -39,7 +39,7 @@ spl_autoload_register(function($class) {
 
      </div>  
        
-            <a href="" id="bevestigen" class="btn btn--bestelling">Bevestigen<span class="border border-bestelling border--mand"></span></a>
+            <a href="bevestiging.php" id="bevestigen" class="btn btn--bestelling">Bevestigen<span class="border border-bestelling border--mand"></span></a>
     </div>
 
 
