@@ -806,9 +806,66 @@ header
     grid-template-columns: 35% 60% ;
 }
 
+/* afrekenen.php */
 
+.rekening__img
+{
+    width: 30%;
+    margin-left: 80px;
+    margin-top: 5px;
+}
 
+.paypal
+{
+    margin-left: 220px;
+    width: 25%;
+    
+}
 
+.visa
+{
+    margin-left: 200px;
+    width: 25%;
+}
+
+.body__afrekenen
+{
+    background-color: #F2F2F2;  
+}
+
+.jouwbestelling
+{
+    background-color: white;
+    padding: 20px;
+}
+
+.jouwbestelling__h3
+{
+    color: #4D180C;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.betaal
+{
+    margin: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: white;
+    color: #4D180C;
+    font-weight: bold;
+}
+
+.betaal__h5
+{
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+#bevestigen
+{
+    margin-top: 100px;
+}
 
 
 

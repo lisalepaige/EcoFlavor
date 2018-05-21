@@ -18,6 +18,7 @@ $winkelmand = User::getWinkelmandje();
 
 <h3 class="best__h3">Winkelmandje</h3>
 
+
 <div class="ecokoerier koerier__winkelmand">
        <div class="eco__flex eco__winkelmand">
         <h3 class="eco__h3 best__ecotitel">Mijn boodschappen thuis laten leveren via ecokoeriers</h3>
@@ -45,11 +46,12 @@ $winkelmand = User::getWinkelmandje();
 
 
     </div>  
-            <a href="#" id="afrekenen" class="btn btn--bestelling afrekenen">Afrekenen<span class="border border-bestelling border--mand"></span></a>
+            <a href="afrekenen.php" id="afrekenen" class="btn btn--bestelling afrekenen">Afrekenen<span class="border border-bestelling border--mand"></span></a>
     </div>
 
    <?php include_once("nav.inc.php"); ?>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   
 
 </body>
 </html>
