@@ -116,8 +116,8 @@
 
      <iframe width="100%" height="400" src="https://www.google.com/maps/d/embed?mid=1Eag-ZvBjx0diin672vKObDZPkVldw7ez"></iframe>
 
-    <div class="ecokoerier">
-       <div class="eco__flex eco__leveren" >
+    <div class="ecokoerier ecomedia">
+       <div class="eco__flex eco__leveren">
         <h3 class="eco__titel ecodetail__titel">Mijn boodschappen thuis laten leveren via de ecokoeriers</h3>
         <a href="ecokoeriers.php" class="btn btn--leveren">Leveren<span class="border border--eco"></span></a>
        </div>

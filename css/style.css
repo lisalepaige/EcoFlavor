@@ -24,7 +24,8 @@ header
     overflow: hidden;
     position: fixed;
     bottom: 0;
-    max-width: 410px;
+    
+    max-width: 100%;
 }
 
 .nav__item a
@@ -659,7 +660,7 @@ header
 .controls{
     display: flex;
     justify-content: space-around;
-    margin-left: 300px;
+    margin-left: 280px;
     height: 48px;
 }
 
@@ -742,13 +743,13 @@ header
 
 .best__span
 {
-    padding-left: 300px;
+    padding-left: 270px;
     text-align: right;
 }
 
 .span--totaal
 {
-    padding-left: 315px;
+    padding-left: 285px;
     margin-bottom: 60px;
 }
 
@@ -768,6 +769,7 @@ header
 .koerier__winkelmand
 {
     height: 250px;
+    margin-bottom: 20px;
 }
 
 .eco__winkelmand
@@ -819,6 +821,7 @@ header
 .winkelmand__list
 {
     grid-template-columns: 35% 60% ;
+    margin-bottom: -20px;
 }
 
 /* afrekenen.php */
@@ -952,19 +955,20 @@ header
     width: 50%;  
 }
 
-@media (max-width: 320px)
+@media (max-width: 480px)
 {
     body 
     {
-        background-color: lightskyblue;
+        background-color: purple;
     }
 
     /* nav.php */
 
     .nav
     {
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: 55px;
+        padding-right: 55px;
+        max-width: 100%;
     }
 
     .nav__profiel
@@ -986,7 +990,289 @@ header
 
     .search
     {
-        width: 130px;
+        max-width: 100%;
+        padding-left: 5px;
+    }
+
+    .search__input
+    {
+        font-size: 1.1em;
+        width: 180px;
+        margin-left: 160px;
+    }
+
+    .maand
+    {
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+
+    .maand__h1
+    {
+        font-size: 1.4em;
+    }
+
+    .maand__h2
+    {
+        font-size: 1.2em;
+    }
+
+    .btn--maand
+    {
+        margin-left: 180px;
+        margin-top: -30px;
+        margin-bottom: 20px;
+    }
+
+    .maand__p
+    {
+        width: 260px;
+    }
+
+    .maand__grid
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .categorie
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .afair
+    {
+        display: block;
+    }
+
+    .cat__fair
+    {
+        padding-left: 43px;
+        padding-right: 43px;
+    }
+
+    .cat__fair p, .cat__fair img
+    {
+        padding-left: 0px;
+    }
+
+    .cat__seizoen
+    {
+        padding-right: 70px;
+    }
+
+    .cat__seizoen p, .cat__seizoen img
+    {
+        padding-left: 35px;
+    }
+
+    .ecokoerier
+    {
+        background-position: -240px;
+        padding-top: 80px;
+        max-width: 100%;
+        height: 260px;
+    }
+
+    .eco__flex
+    {
+        margin-top: -60px;
+        margin-left: 20px;
+    }
+
+    .eco__h3
+    {
+        padding-top: 0px;
+    }
+
+    /* search */
+
+    .searchP__list
+    {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+    }
+
+    .searchP__img
+    {
+        display: grid;
+        grid-column-start: span 2;
+        width: 100%;
+    }
+
+    .searchP__pnaam
+    {
+        font-size: 0.9em;
+    }    
+
+    /* detail */
+    .detail__img
+    {
+        width: 100%;
+    }
+
+    .info
+    {
+        margin-left: 40px;
+    }
+
+    .btn--bestelling
+    {
+        width: 200px;
+    }
+
+    .border-bestelling
+    {
+        width: 207px;
+    }
+
+    .dagen
+    {
+        width: 150px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ecodetail__titel
+    {
+        width: 100%;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .btn--leveren
+    {
+        margin-bottom: 20px;
+        margin-left: 150px;
+    }
+
+    .ecomedia
+    {
+        height: 260px;
+        background-position: right; 
+    }
+
+    /* bestelling.php */
+
+    .best__span
+    {
+        padding-left: 140px;
+    }
+
+    .span--totaal
+    {
+        padding-left: 150px;
+    }
+
+    .controls
+    {
+        margin: 0px;
+        margin-left: 140px;
+    }
+
+    .bestelling
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 20px;
+    }
+
+    /* winkelmandje */
+
+    .best__ecotitel
+    {
+        margin-left: 20px;
+        margin-top: 0px;
+    }
+
+    .btn--ecowinkelmand
+    {
+        margin-top: 20px;
+    }
+
+    .koerier__winkelmand
+    {
+        margin-bottom: 20px;
+        height: 330px;
+    }
+
+    .winkelmand__list
+    {
+        display: grid;
+        grid-template-columns: 100%;
+        padding: 10px;
+        margin-left: -15px;
+        margin-bottom: -25px;
+        width: 260px;
+    }
+
+    .border--mand
+    {
+        width: 202px;
+        height: 2px;
+    }
+
+    /* afrekenen.php */
+
+    .rekening__img
+    {
+        margin-left: 20px;
+    }
+
+    .paypal
+    {
+        margin-left: 60px;
+    }
+
+    .visa
+    {
+        margin-left: 35px;
+    }
+}
+
+@media (max-width: 320px)
+{
+    body 
+    {
+        background-color: lightskyblue;
+    }
+
+    /* nav.php */
+
+    .nav
+    {
+        padding-left: 5px;
+        padding-right: 5px;
+        max-width: 100%;
+    }
+
+    .nav__profiel
+    {
+        margin-top: 2px;
+    }
+
+    .nav__item img
+    {
+        width: 50px;
+    }
+
+    .nav__item a
+    {
+        font-size: 0.6em;
+    }
+
+    /* index.php */
+
+    .search
+    {
+        max-width: 100%;
         padding-left: 5px;
     }
 
@@ -1077,28 +1363,7 @@ header
     .eco__h3
     {
         padding-top: 0px;
-    }
-
-    /* search */
-
-    .searchP__list
-    {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 50% 50%;
-    }
-
-    .searchP__img
-    {
-        display: grid;
-        grid-column-start: span 2;
-        width: 100%;
-    }
-
-    .searchP__pnaam
-    {
-        font-size: 0.9em;
-    }    
+    }     
 
     /* detail */
     .detail__img
@@ -1124,7 +1389,9 @@ header
     .dagen
     {
         width: 150px;
-        margin-left: 55px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .ecodetail__titel
@@ -1136,18 +1403,18 @@ header
 
     .best__span
     {
-        padding-left: 120px;
+        padding-left: 90px;
     }
 
     .span--totaal
     {
-        padding-left: 130px;
+        padding-left: 100px;
     }
 
     .controls
     {
         margin: 0px;
-        margin-left: 120px;
+        margin-left: 90px;
     }
 
     /* winkelmandje */
@@ -1202,4 +1469,5 @@ header
     }
 
 }
+
 
