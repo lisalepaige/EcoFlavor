@@ -20,6 +20,10 @@ header
     justify-content: space-around;
     padding-left: 35px;
     padding-right: 35px;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    max-width: 410px;
 }
 
 .nav__item a
@@ -261,6 +265,7 @@ header
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
+    margin-bottom: 80px;
     max-width: 100%;
     height: 350px;
 }
@@ -304,6 +309,7 @@ header
     color: #4D180C;
     font-family: 'Century Gothic';
     margin-top: 10px;
+    margin-bottom: 80px;
     padding: 10px;
 }
 
@@ -593,9 +599,11 @@ header
 }
 
 /* fairtrade.php */
+
 .fairtrade
 {
     background-color: #F2F2F2; /* grijs achtergrond */
+    margin-bottom: 100px;
     padding-top: 10px;
     padding-left: 20px;
 }
@@ -750,6 +758,12 @@ header
 }
 
 /* winkelmand.php */
+
+.bodywinkelmand
+{
+    margin-bottom: 120px;
+}
+
 .koerier__winkelmand
 {
     height: 250px;
@@ -885,6 +899,8 @@ header
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 80px;
+    margin-top: -80px;
 }
 
 .label__eco
