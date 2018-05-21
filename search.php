@@ -23,8 +23,8 @@ $gemeente = $address['gemeente'];
  $unit = "K";
 
  $calculateDis = Product::getDistance($addressFrom, $addressTo, $unit);
- var_dump($calculateDis);
- var_dump($addressTo);
+ //var_dump($calculateDis);
+ //var_dump($addressTo);
 
 ?><!DOCTYPE html>
 <?php include_once("head.inc.php"); ?>
