@@ -30,13 +30,13 @@ $gemeente = $address['gemeente'];
         <a href="index.php"><img src="images/home.png" alt="home" class="header__home"></a>
         <a href="instellingen.php"><img src="images/instellingen.png" alt="instellingen"></a>
 </header>
-    <section>
-        <h2 class="searchP__titel">Product van de maand</h2>
-        <h3>De Prei</h3>
-        <h5>Seizoensproduct: december - mei</h5>
+    <section class="maandproduct">
+        <h2 class="maand__titelh2">Product van de maand</h2>
+        <h3 class="maand__titelh3">De Prei</h3>
+        <h5 class="maand__titelh5">Seizoensproduct: december - mei</h5>
     </section>
 
-    <div>
+    <div class="info__maand">
         <ul>
             <li><p>Prei is een heel veelzijdig en dankbaar ingrediënt in de keuken. De groente past in zowat alle gerechten. En met fijne reepjes preiwit of -groen kan je je gerechten ook altijd mooi afwerken.
             </p></li>

@@ -973,6 +973,40 @@ header
     width: 50%;  
 }
 
+/* maand.php */
+
+.maandproduct
+{
+    background-image: url('../images/preibackground.png');
+    background-position: center;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+.maand__titelh2
+{
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.7em;
+    margin-left: 20px;
+    
+}
+
+.maand__titelh3
+{
+    color: #93C01F;
+    font-size: 1.4em;
+    margin-left: 20px;
+    margin-top: -20px;
+    margin-bottom: 60px;
+}
+
+.maand__titelh5
+{
+    color: white;
+    margin-left: 20px;
+}
+
 @media (max-width: 480px)
 {
 
