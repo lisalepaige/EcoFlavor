@@ -45,6 +45,19 @@ include_once('Db.class.php');
                 return $oneProduct = $statement->fetchAll(PDO::FETCH_ASSOC);
             }
 
+            public static function ProductVDMaand()
+            {
+                $conn = Db::getInstance();
+                $statement = $conn->prepare("SELECT * FROM groep, product, handelaar, producthandelaar WHERE product.groep_id = '9' 
+                AND groep.groep_id = '9'
+                AND producthandelaar.product_id = product.id
+                AND producthandelaar.handelaar_id = handelaar.id");  
+                $statement->execute();
+                $maand = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+                return $maand;
+            }
+
             public static function searchProduct($search){
 
                     $conn = Db::getInstance();
