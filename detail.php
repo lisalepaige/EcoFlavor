@@ -3,12 +3,12 @@
         include_once("classes/" . $class . ".class.php");
     });
 
-    $id = $_GET['id'];
+    $id = $_GET['product_id'];
 
     $oneProduct = Product::ShowOne($id);
     $verification = Handelaar::Verification();
 
-    $product = Product::ShowProduct(); 
+    //$product = Product::ShowProduct(); 
     
     
     //calculate distance
@@ -22,9 +22,7 @@
     $addressTo = $straatnaam . " " . $huisnr . ", " . $postcode . " " . $gemeente;
     $unit = "K";
 
-    $calculateDis = Product::getDistance($addressFrom, $addressTo, $unit);
-    var_dump($calculateDis);
-    var_dump($addressTo);
+    //$calculateDis = Product::getDistance($addressFrom, $addressTo, $unit);
 
 ?><!DOCTYPE html>
 
@@ -34,7 +32,7 @@
 <body class="detailphp">
     
 <header>
-    <a href="search.php?search="$search""><img src="images/arrow.png" alt="back"></a>
+    <a href="index.php"><img src="images/arrow.png" alt="back"></a>
     <a href="index.php"><img src="images/home.png" alt="home" class="header__home"></a>
     <a href="instellingen.php"><img src="images/instellingen.png" alt="instellingen"></a>
 </header>
@@ -53,7 +51,7 @@
         <?php endif; ?>
         <div class="info__flex">
             <h4 class="searchP__pnaam pnaam--info"><?php echo $p['product_naam']; ?></h4>
-            <p class="searchP__prijs prijs--info">€ <?php echo $p['product_prijs']; ?></p>
+            <p class="searchP__prijs prijs--info"> &euro; <?php echo $p['product_prijs']; ?></p>
         </div>
         <div class="info">
             <p class="info__vers"><?php echo $p['vers']; ?></p>
@@ -64,7 +62,7 @@
         </div>
 
         <div class="bestelling">
-        <a href="bestelling.php?id=<?php echo $p['id']; ?>" class="btn btn--bestelling">Bestelling plaatsen<span class="border-bestelling"></span></a>
+        <a href="bestelling.php?product_id=<?php echo $p['product_id']; ?>" class="btn btn--bestelling">Bestelling plaatsen<span class="border-bestelling"></span></a>
         </div>  
     </div>
 

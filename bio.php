@@ -3,9 +3,11 @@
 include_once("classes/Categorie.class.php");
 $bio = Categorie::GetBio();  
 
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
 ?><!DOCTYPE html>
 <?php include_once("head.inc.php"); ?>
-
 
 <body>
 <header>

@@ -57,9 +57,9 @@ $gemeente = $address['gemeente'];
                     <img src="images/verificatie.png" alt="verificatie" class="searchP__v"></p>
                 <?php endif; ?>
                 <p class="searchP__afstand"><?php echo $calculateDis; ?></p>
-                <p class="searchP__prijs">€ <?php echo $f['product_prijs']; ?></p>
+                <p class="searchP__prijs">&euro; <?php echo $f['product_prijs']; ?></p>
             </div>  
-            <a href="detail.php?id=<?php echo $f['id']; ?>" class="btn btn--searchP">Lees Meer<span class="border"></span></a>
+            <a href="detail.php?product_id=<?php echo $f['product_id']; ?>" class="btn btn--searchP">Lees Meer<span class="border"></span></a>
         </div>
         <?php endforeach; ?>
 

@@ -37,7 +37,7 @@ $winkelmand = User::getWinkelmandje();
                 <?php if ($w['verificatie'] == 1): ?>
                     <img src="images/verificatie.png" alt="verificatie" class="searchP__v"></p>
                 <?php endif; ?>
-                <p class="searchP__prijs">Totaalprijs: € <?php echo $w['totaalprijs']; ?></p>
+                <p class="searchP__prijs">Totaalprijs: &euro; <?php echo $w['totaalprijs']; ?></p>
 
         
 

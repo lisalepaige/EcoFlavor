@@ -4,7 +4,7 @@ spl_autoload_register(function($class) {
     include_once("classes/" . $class . ".class.php");
 });
 
-$id = $_GET['id'];
+$id = $_GET['product_id'];
 $oneProduct = Product::ShowOne($id);
 
 ?><!DOCTYPE html>
@@ -30,7 +30,7 @@ $oneProduct = Product::ShowOne($id);
 <section class="section__best">
 <div class="bestelling">
 <?php foreach($oneProduct as $p): ?>
-    <p class="best__stukprijs">Stukprijs (€)<span class="best__span"><?php echo $p['product_prijs']; ?></span></p>
+    <p class="best__stukprijs">Stukprijs (&euro;)<span class="best__span"><?php echo $p['product_prijs']; ?></span></p>
 
     <div class="best_aantal">
     <p>Aantal</p>
@@ -43,7 +43,7 @@ $oneProduct = Product::ShowOne($id);
     </div>
    
 
-    <p>Totaal (€) <span class="best__span span--totaal"></span</p>
+    <p>Totaal (&euro;) <span class="best__span span--totaal"></span</p>
     
 
         <div class="bestelling">

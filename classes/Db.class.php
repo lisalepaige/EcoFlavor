@@ -5,7 +5,10 @@
 
         public static function getInstance() {
             
-            require_once dirname(__FILE__) . '\..\settings\db.php';
+            if(!defined('__ROOT__')){
+                define('__ROOT__', dirname(dirname(__FILE__)));
+            }
+            require_once(__ROOT__.'/settings/db.php');
 
             if( self::$conn == null ){
                 self::$conn = new PDO("mysql:host=".$db['host'].";dbname=".$db['dbname'], $db['username'], $db['password']);
