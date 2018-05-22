@@ -12,7 +12,7 @@ $oneProduct = Product::ShowOne($id);
 <body class="bestellingpage">
 
 <header>
-    <a href="detail.php?id=<?php echo $f['id']; ?>"><img src="images/arrow.png" alt="back"></a>
+    <a href="detail.php?id=<?php echo $f['id']; ?>"><img src="images/arrow.png" alt="back" class="arrow"></a>
     <a href="index.php"><img src="images/home.png" alt="home" class="header__home"></a>
     <a href="instellingen.php"><img src="images/instellingen.png" alt="instellingen"></a>
 </header>

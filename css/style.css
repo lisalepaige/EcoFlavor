@@ -2,7 +2,9 @@ body
 {
     max-width: 480px;
     font-family: 'Roboto', sans-serif;
-    background-color: F2F2F2;
+    background-color: #F2F2F2;
+    margin-top: -5px;
+    margin-left: -5px;
 }
 
 header
@@ -10,6 +12,13 @@ header
     background-color: #93C01F;
     display: flex;
     justify-content: space-between;
+    margin-top: 3px;
+}
+
+.arrow
+{
+    padding-top: 5px;
+    padding-left: 3px;
 }
 
 .nav 
@@ -1500,7 +1509,7 @@ header
 
     .center
     {
-        padding-left: 0px;
+        padding-left: 10px;
     }
 
     .input__eco

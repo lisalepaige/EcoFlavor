@@ -11,7 +11,7 @@ $winkelmand = User::getWinkelmandje();
 <body class="bodywinkelmand">
 
     <header>
-        <a href="bestelling.php"><img src="images/arrow.png" alt="back"></a>
+        <a href="bestelling.php"><img src="images/arrow.png" alt="back" class="arrow"></a>
         <a href="index.php"><img src="images/home.png" alt="home" class="header__home"></a>
         <a href="instellingen.php"><img src="images/instellingen.png" alt="instellingen"></a>
     </header>
