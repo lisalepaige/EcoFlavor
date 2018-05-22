@@ -37,8 +37,8 @@
         <div class="maand__grid">
         <p class="maand__p">Ben je aan het koken? Voeg dat wat prei toe aan het gerecht… 
         het zorgt voor een rijkere en zachtere smaak. 
-        Een prei is ook ideaal als basis voor een soep,
-        maar het kan evengoed gestoomd of gebakken worden in boter.</p>
+        Een prei is ook ideaal als basis voor soep,
+        maar je kan het ook stomen of bakken in boter.</p>
         <a href="maandProduct.php" class="btn btn--maand">Lees Meer<span class="border"></span></a>
         </div>
    </div>

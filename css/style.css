@@ -51,7 +51,7 @@ header
 {
     background-color: #93C01F;
     font-size: 1.6em;
-    opacity: 0.6;
+    opacity: 0.8;
     border-style: none;
     border-bottom-style: double;
     border-color: white;
@@ -1234,6 +1234,38 @@ header
     {
         margin-left: 35px;
     }
+
+    /* ecokoeriers.php */
+
+    .center
+    {
+        padding-left: 20px;
+    }
+
+    .input__eco
+    {
+        width: 200px;
+    }
+
+    .input__naam
+    {
+        width: 85px;
+    }
+
+    .input__select
+    {
+        width: 220px;
+    }
+
+    .input__levertijd
+    {
+        width: 110px;
+    }
+
+    .btn--bestelling
+    {
+        margin-top: 30px;
+    }
 }
 
 @media (max-width: 320px)
@@ -1297,13 +1329,14 @@ header
     .btn--maand
     {
         margin-left: 160px;
-        margin-top: -40px;
+        margin-top: -50px;
         margin-bottom: 20px;
     }
 
     .maand__p
     {
-        width: 180px;
+        width: 150px;
+        font-size: 0.7em;
     }
 
     .maand__grid
@@ -1461,6 +1494,38 @@ header
     .visa
     {
         margin-left: 35px;
+    }
+
+    /* ecokoeriers.php */
+
+    .center
+    {
+        padding-left: 0px;
+    }
+
+    .input__eco
+    {
+        width: 200px;
+    }
+
+    .input__naam
+    {
+        width: 85px;
+    }
+
+    .input__select
+    {
+        width: 220px;
+    }
+
+    .input__levertijd
+    {
+        width: 110px;
+    }
+
+    .btn--bestelling
+    {
+        margin-top: 30px;
     }
 
 }
