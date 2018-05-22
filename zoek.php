@@ -16,8 +16,6 @@
 ?><!DOCTYPE html>
 <?php include_once("head.inc.php"); ?>
 <body>
-
-<p>Your Location: <span id="location"></span></p>
     
 <header>
         <a href="index.php"><img src="images/arrow.png" alt="back"></a>

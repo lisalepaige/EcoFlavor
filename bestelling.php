@@ -20,7 +20,7 @@ $oneProduct = Product::ShowOne($id);
 <main class="main__best">
 <?php foreach($oneProduct as $p): ?>
     <h4 class="best__h4" data-id="<?php echo $p['handelaar_id']; ?>"><?php echo $p['handelaar_naam']; ?></h4>
-    <h3 class="best__h3" data-id="<?php echo $p['product_id']; ?>"><?php echo $p['product_naam']; ?></h3>
+    <h3 class="best__h3 best__id" data-id="<?php echo $p['product_id']; ?>"><?php echo $p['product_naam']; ?></h3>
     <img class="best__img" src="images/<?php echo $p['product_img']; ?>" alt="product">
 <?php endforeach; ?>
 </main>

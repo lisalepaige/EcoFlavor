@@ -50,15 +50,14 @@ include_once('Db.class.php');
         public static function getWinkelmandje()
         {
             $conn = Db::getInstance();
-            $statement = $conn->prepare("SELECT * FROM product, handelaar, producthandelaar, winkelmandje 
-            WHERE producthandelaar.handelaar_id = handelaar.id 
-            AND producthandelaar.product_id = product.id
-            AND winkelmandje.product_id = product.id
-            AND winkelmandje.handelaar_id = handelaar.id");
-
+            $statement = $conn->prepare("SELECT * FROM product, handelaar, winkelmandje WHERE winkelmandje.product_id = product.id AND winkelmandje.handelaar_id = handelaar.id");
             $statement->execute();
-
             $winkelmand = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+            /*$foundProduct = [];
+                        foreach($winkelmand as $w){ 
+                                $foundProduct[$w['product.id']] = $w;                             
+                        }*/
 
             return $winkelmand;
         }

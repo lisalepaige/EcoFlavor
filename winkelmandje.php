@@ -38,8 +38,8 @@ $winkelmand = User::getWinkelmandje();
                     <img src="images/verificatie.png" alt="verificatie" class="searchP__v"></p>
                 <?php endif; ?>
                 <p class="searchP__prijs">Totaalprijs: &euro; <?php echo $w['totaalprijs']; ?></p>
-
-        
+            </div>
+        </div>
 
     </main>
     <?php endforeach; ?>

@@ -1,8 +1,10 @@
 $("#bestellen").on('click', function(e){
-    var product_id = $('.best__h4').attr("data-id");
+    var product_id = $('.best__id').attr("data-id");
     var handelaar_id = $('.best__h4').attr("data-id");
     var totaalprijs = document.querySelector(".span--totaal").innerHTML;
 
+    console.log(product_id);
+    console.log(handelaar_id);
     console.log(totaalprijs);
 
     //to database
