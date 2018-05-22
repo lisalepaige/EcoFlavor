@@ -5,6 +5,7 @@ body
     background-color: #F2F2F2;
     margin-top: -5px;
     margin-left: -5px;
+    margin-left: -5px;
 }
 
 header
@@ -814,8 +815,11 @@ header
 
 .winkelmand
 {
-    margin: 20px;
     margin-bottom: 40px;
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+    width: 100%;
 }
 
 .winkelmand__img
@@ -830,8 +834,10 @@ header
 
 .winkelmand__list
 {
-    grid-template-columns: 35% 60% ;
+    display: grid;
+    grid-template-columns: 35% 60%;
     margin-bottom: -20px;
+    margin-left: 20px;
 }
 
 /* afrekenen.php */
@@ -1216,9 +1222,7 @@ header
         display: grid;
         grid-template-columns: 100%;
         padding: 10px;
-        margin-left: -15px;
         margin-bottom: -25px;
-        width: 260px;
     }
 
     .border--mand

@@ -29,7 +29,7 @@ $winkelmand = User::getWinkelmandje();
 <?php foreach($winkelmand as $w): ?>
     <main class="winkelmand">
 
-        <div class="searchP__list winkelmand__list">
+        <div class="winkelmand__list">
             <img src="images/<?php echo $w['product_img']; ?>" alt="product" class="searchP__img winkelmand__img" >
             <div class="searchP__grid winkelmand__grid">
                 <h4 class="searchP__pnaam" data-groep="<?php echo $w['groep_naam']; ?>"><?php echo $w['product_naam']; ?></h4>
