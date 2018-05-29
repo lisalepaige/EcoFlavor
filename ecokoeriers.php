@@ -60,8 +60,8 @@
     </select>
     <select name="levertijd" class="input__eco input__naam input__levertijd">
         <option value="Dag">Dag</option>
-        <option value="Vandaag"></option>
-        <option value="Andere dag..."></option>
+        <option value="Vandaag">Vandaag</option>
+        <option value="Andere dag...">Andere dag...</option>
     </select>
 </div>
 

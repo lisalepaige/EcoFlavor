@@ -18,7 +18,7 @@ $huisnr = $address['huisnummer'];
 $postcode = $address['postcode'];
 $gemeente = $address['gemeente'];
 
- $addressFrom = 'Hondstraatje 9, 3460 Bekkevoort';
+ $addressFrom = 'Lange Ridderstraat 44, 2800 Mechelen';
  $addressTo = $straatnaam . " " . $huisnr . ", " . $postcode . " " . $gemeente;
  $unit = "K";
 

@@ -54,12 +54,16 @@ include_once('Db.class.php');
             $statement->execute();
             $winkelmand = $statement->fetchAll(PDO::FETCH_ASSOC);
 
-            /*$foundProduct = [];
-                        foreach($winkelmand as $w){ 
-                                $foundProduct[$w['product.id']] = $w;                             
-                        }*/
-
             return $winkelmand;
+        }
+
+        public function DeleteItem($winkel_id)
+        {
+            $conn = Db::getInstance();
+            $statement = $conn->prepare("DELETE FROM `winkelmandje` WHERE id = :winkel_id ");
+            $statement->bindValue(":winkel_id", $winkel_id);
+            $statement->execute();
+            $winkelmand = $statement->fetchAll(PDO::FETCH_ASSOC);
         }
 
     }

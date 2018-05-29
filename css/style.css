@@ -840,6 +840,12 @@ header
     margin-left: 20px;
 }
 
+.verwijder
+{
+    color: black;
+    opacity: 0.5;
+}
+
 /* afrekenen.php */
 
 .rekening__img

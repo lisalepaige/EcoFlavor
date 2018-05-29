@@ -32,12 +32,13 @@ $winkelmand = User::getWinkelmandje();
         <div class="winkelmand__list">
             <img src="images/<?php echo $w['product_img']; ?>" alt="product" class="searchP__img winkelmand__img" >
             <div class="searchP__grid winkelmand__grid">
-                <h4 class="searchP__pnaam" data-groep="<?php echo $w['groep_naam']; ?>"><?php echo $w['product_naam']; ?></h4>
-                <p class="searchP__hnaam" data-id="<?php echo $w['handelaar_id']; ?>"><?php echo $w['handelaar_naam']; ?>
+                <h4 class="searchP__pnaam w__product" data-groep="<?php echo $w['groep_naam']; ?>"><?php echo $w['product_naam']; ?></h4>
+                <p class="searchP__hnaam"><?php echo $w['handelaar_naam']; ?>
                 <?php if ($w['verificatie'] == 1): ?>
                     <img src="images/verificatie.png" alt="verificatie" class="searchP__v"></p>
                 <?php endif; ?>
                 <p class="searchP__prijs">Totaalprijs: &euro; <?php echo $w['totaalprijs']; ?></p>
+                <a href="#" class="verwijder" data-id="<?php echo $w['id']; ?>">verwijder</a>
             </div>
         </div>
 
@@ -51,6 +52,7 @@ $winkelmand = User::getWinkelmandje();
 
    <?php include_once("nav.inc.php"); ?>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="script/deleteOrder.js"></script>
    
 
 </body>
