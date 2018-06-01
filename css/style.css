@@ -1132,7 +1132,6 @@ header
 {
 
     /* nav.php */
-
     .nav
     {
         padding-left: 55px;
@@ -1442,6 +1441,42 @@ header
 {
 
     /* nav.php */
+
+    .aanmelden__input
+    {
+        width: 150px;
+    }
+
+    .btn--aanmelden
+    {
+        width: 170px;
+    }
+
+    .border--aanmelden
+    {
+        width: 170px;
+    }
+
+    .link__wachtwoord
+    {
+        margin-top: 0px;
+        align-self: center;
+    }
+
+    .link__account
+    {
+        margin-bottom: 10px;
+        align-self: center;
+        margin-left: 35px;
+    }
+
+    .aanmelden__links
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
 
     .nav
     {
