@@ -11,7 +11,7 @@
     //$product = Product::ShowProduct(); 
     
     
-    //calculate distance
+    /*calculate distance
     $address = Handelaar::getAddress();
     $straatnaam = $address['straatnaam'];
     $huisnr = $address['huisnummer'];
@@ -20,7 +20,7 @@
 
     $addressFrom = 'Hondstraatje 9, 3460 Bekkevoort';
     $addressTo = $straatnaam . " " . $huisnr . ", " . $postcode . " " . $gemeente;
-    $unit = "K";
+    $unit = "K";*/
 
     //$calculateDis = Product::getDistance($addressFrom, $addressTo, $unit);
 
@@ -45,10 +45,11 @@
     </div>
 
     <div class="information">
-        <p class="info__hnaam"><?php echo $p['handelaar_naam']; ?>
+        <p class="info__hnaam" data-id="<?php echo $p['handelaar_id']; ?>"><?php echo $p['handelaar_naam']; ?>
         <?php if ($p['verificatie'] == 1): ?>
             <img src="images/verificatie.png" alt="verificatie" class="searchP__v">
         <?php endif; ?>
+        <p class="distance"></p>
         <div class="info__flex">
             <h4 class="searchP__pnaam pnaam--info"><?php echo $p['product_naam']; ?></h4>
             <p class="searchP__prijs prijs--info"> &euro; <?php echo $p['product_prijs']; ?></p>
@@ -100,10 +101,10 @@
         <h3 class="contact__titel">Contact</h3>
         <h4 class="contact__bijtitel">Breng ons een bezoekje</h4>
         <div class="adres">
-            <p class="adres__info"> <?php echo $p['straatnaam']; ?> </p>
-            <p class="adres__info"> <?php echo $p['huisnummer']; ?> </p>
-            <p class="adres__info"> <?php echo $p['postcode']; ?> </p>
-            <p class="adres__info"> <?php echo $p['gemeente']; ?></p>
+            <p class="adres__info straatnaam"> <?php echo $p['straatnaam']; ?> </p>
+            <p class="adres__info huisnr"> <?php echo $p['huisnummer']; ?> </p>
+            <p class="adres__info postcode"> <?php echo $p['postcode']; ?> </p>
+            <p class="adres__info gemeente"> <?php echo $p['gemeente']; ?></p>
         </div>
             <p class="adres__mail"><?php echo $p['handelaar_mail']; ?></p>
             <p>0<?php echo $p['telefoon']; ?></p>
@@ -123,7 +124,7 @@
 
     <?php include_once("nav.inc.php"); ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="script/getLocation.js"></script>
+    <script src="script/getDetailLocation.js"></script>
 
     <script>
         

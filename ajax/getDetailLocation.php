@@ -1,6 +1,5 @@
 <?php
 
-include_once("../classes/Handelaar.class.php");
 include_once("../classes/Product.class.php");
 
 
@@ -21,11 +20,11 @@ if(!empty($_POST['latitude']) && !empty($_POST['longitude'])){
     }
 
     //calculate distance
-    $address = Handelaar::getAddress();
-    $straatnaam = $address['straatnaam'];
-    $huisnr = $address['huisnummer'];
-    $postcode = $address['postcode'];
-    $gemeente = $address['gemeente'];
+    
+    $straatnaam = $_POST['straatnaam'];
+    $huisnr = $_POST['huisnr'];
+    $postcode = $_POST['postcode'];
+    $gemeente = $_POST['gemeente'];
 
     $addressFrom = $location;
     $addressTo = $straatnaam . " " . $huisnr . ", " . $postcode . " " . $gemeente;

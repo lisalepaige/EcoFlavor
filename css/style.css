@@ -22,6 +22,11 @@ header
     padding-left: 3px;
 }
 
+.distance
+{
+    margin-left: 20px;
+}
+
 .nav 
 {
     list-style: none;
@@ -439,7 +444,6 @@ header
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 10px;
 }
 
 .information

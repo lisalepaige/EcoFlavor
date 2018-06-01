@@ -31,7 +31,7 @@ error_reporting(E_ALL);
             <div class="prod">
             <?php foreach($bio as $b): ?>
             <div class="prod__grid">
-                <a href="search.php?search=<?php echo $s['groep_naam']; ?>">
+                <a href="search.php?search=<?php echo $b['groep_naam']; ?>">
                     <img class="prod__img" src="images/<?php echo $b['groep_image']; ?>" alt="bio">
                     <p><?php echo $b['groep_naam']; ?></p>
                 </a>

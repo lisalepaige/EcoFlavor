@@ -20,7 +20,8 @@ include_once('Db.class.php');
         public static function getAddress()
         {
             $conn = Db::getInstance();
-            $stmt = $conn->prepare("SELECT straatnaam, huisnummer, postcode, gemeente FROM adres");
+            $stmt = $conn->prepare("SELECT straatnaam, huisnummer, postcode, gemeente FROM adres, handelaar
+            WHERE adres_id = adres.id");
             $stmt->execute();
             $address = $stmt->fetch(PDO::FETCH_ASSOC);
             
