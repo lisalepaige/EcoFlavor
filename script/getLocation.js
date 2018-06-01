@@ -17,13 +17,13 @@ function showLocation(position){
         type:'POST',
         url:'ajax/getLocation.php',
         data:'latitude='+latitude+'&longitude='+longitude,
-        success:function(msg){
-            if(msg){
-                $("#location").html(msg);
+    
+    }).done(function( res ) {
+            
+        console.log(res);
+        $('.searchP__afstand').html(res.distance);
                 
-            }else{
-                $("#location").html('Not Available');
-            }
-        }
+    }).fail(function (res) {
+        console.log("Sorry. Ajax failed ");
     });
 }

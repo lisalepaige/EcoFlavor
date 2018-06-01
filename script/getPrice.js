@@ -32,8 +32,13 @@ min.addEventListener("click", function(e){
 plus.addEventListener("click", function(e){
     e.preventDefault;
 
-        aantal.innerHTML = teller += 1;
-        Total();
+    console.log(teller);
+
+            teller += 1;
+            aantal.innerHTML = teller;
+            Total(); 
+
+        
 
 });
  

@@ -11,29 +11,16 @@ if ( isset($_GET['search']) ){
     $found = Product::searchProduct($search);        
 }
 
-//calculate distance
-$address = Handelaar::getAddress();
-$straatnaam = $address['straatnaam'];
-$huisnr = $address['huisnummer'];
-$postcode = $address['postcode'];
-$gemeente = $address['gemeente'];
 
- $addressFrom = 'Lange Ridderstraat 44, 2800 Mechelen';
- $addressTo = $straatnaam . " " . $huisnr . ", " . $postcode . " " . $gemeente;
- $unit = "K";
-
- $calculateDis = Product::getDistance($addressFrom, $addressTo, $unit);
- //var_dump($calculateDis);
- //var_dump($addressTo);
 
 ?><!DOCTYPE html>
 <?php include_once("head.inc.php"); ?>
 <body>
 
-    <header>
-        <a href="index.php"><img src="images/arrow.png" alt="back" class="arrow"></a>
-        <a href="index.php"><img src="images/home.png" alt="home" class="header__home"></a>
-        <a href="instellingen.php"><img src="images/instellingen.png" alt="instellingen"></a>
+<header>
+    <a href="index.php"><img src="images/arrow.png" alt="back" class="arrow"></a>
+    <a href="index.php"><img src="images/home.png" alt="home" class="header__home"></a>
+    <a href="instellingen.php"><img src="images/instellingen.png" alt="instellingen"></a>
 </header>
 
    <div class="search searchF">
@@ -65,8 +52,8 @@ $gemeente = $address['gemeente'];
                 <p class="searchP__hnaam" data-id="<?php echo $f['handelaar_id']; ?>"><?php echo $f['handelaar_naam']; ?>
                 <?php if ($f['verificatie'] == 1): ?>
                     <img src="images/verificatie.png" alt="verificatie" class="searchP__v"></p>
-                <?php endif; ?>
-                <p class="searchP__afstand"><?php echo $calculateDis; ?></p>
+                <?php endif; ?>          
+                <p class="searchP__afstand"></p>
                 <p class="searchP__prijs">&euro; <?php echo $f['product_prijs']; ?></p>
             </div>  
             <a href="detail.php?product_id=<?php echo $f['product_id']; ?>" class="btn btn--searchP">Lees Meer<span class="border"></span></a>

@@ -1,5 +1,9 @@
 <?php
 
+include_once("../classes/Handelaar.class.php");
+include_once("../classes/Product.class.php");
+
+
 //if latitude and longitude are submitted
 if(!empty($_POST['latitude']) && !empty($_POST['longitude'])){
     //send request and receive json data by latitude and longitude
@@ -13,12 +17,30 @@ if(!empty($_POST['latitude']) && !empty($_POST['longitude'])){
         //get address from json data
         $location = $data->results[0]->formatted_address;
     }else{
-        $location =  'poop';
+        $location =  'no location found';
     }
+
+    //calculate distance
+    $address = Handelaar::getAddress();
+    $straatnaam = $address['straatnaam'];
+    $huisnr = $address['huisnummer'];
+    $postcode = $address['postcode'];
+    $gemeente = $address['gemeente'];
+
+    $addressFrom = $location;
+    $addressTo = $straatnaam . " " . $huisnr . ", " . $postcode . " " . $gemeente;
+    $unit = "K";
+
+    $calculateDis = Product::getDistance($addressFrom, $addressTo, $unit);
+    //echo $addressFrom;
+    //echo $addressTo;
+
+    $response['status'] = "success";
+    $response['distance'] = $calculateDis;
     
     //return address to ajax 
     header('Content-Type: application/json');
-    echo json_encode($location);
+    echo json_encode($response);
     
 }
 ?>
