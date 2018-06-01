@@ -36,12 +36,22 @@ $gemeente = $address['gemeente'];
         <a href="instellingen.php"><img src="images/instellingen.png" alt="instellingen"></a>
 </header>
 
-   <div class="search">
+   <div class="search searchF">
        <form action="" method="get" class="searchNav">
         <input type="search" name="search" placeholder="zoek jouw product" class="search__input">
         <input type=image src=images/search.png alt="Submit">
     </form>
     </div>  
+
+    <div>
+    <label class="filters" for="filter">Filter</label>
+    <select name="filter" class="filter__options">
+        <option value="Kies"></option>
+        <option value="Alfabetisch">Alfabetisch</option>
+        <option value="Prijs">Prijs</option>
+    </select>
+
+    </div>
  
     <main class="searchP">
         <h2 class="searchP__titel"><?php echo $search; ?></h2>
@@ -68,5 +78,6 @@ $gemeente = $address['gemeente'];
    <?php include_once("nav.inc.php"); ?>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
    <script src="script/getLocation.js"></script>
+   <script src="script/getFilter.js"></script>
 </body>
 </html>

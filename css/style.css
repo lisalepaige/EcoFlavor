@@ -29,12 +29,12 @@ header
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 40px;
+    padding-right: 40px;
     overflow: hidden;
     position: fixed;
     bottom: 0;
-    
+    width: 400px;   
     max-width: 100%;
 }
 
@@ -314,6 +314,29 @@ header
 }
 
 /* search.php */
+.searchF
+{
+    margin-bottom: 20px;
+}
+
+.filters
+{
+    margin-left: 20px;
+    background-color: #8C1A14;
+    text-transform: uppercase;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 7px;
+    color: white;
+}
+
+.filter__options
+{
+    border: 2px solid #8C1A14;
+    padding: 5px;
+    margin-left: -4px;
+}
 
 .searchP
 {
