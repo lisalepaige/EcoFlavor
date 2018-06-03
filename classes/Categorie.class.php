@@ -64,7 +64,7 @@ include_once('Db.class.php');
             $conn = Db::getInstance();
             $stmt = $conn->prepare("SELECT * FROM product, groep, seizoen, productseizoen WHERE productseizoen.seizoen_id = seizoen.id 
             AND productseizoen.product_id = product.id 
-            AND productseizoen.seizoen_id = '5' 
+            AND productseizoen.seizoen_id = '6' 
             AND product.groep_id = groep.groep_id");
             $stmt->execute();
             $seizoen = $stmt->fetchAll(PDO::FETCH_ASSOC);

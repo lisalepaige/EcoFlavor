@@ -32,19 +32,19 @@ $gemeente = $address['gemeente'];
 </header>
     <section class="maandproduct">
         <h2 class="maand__titelh2">Product van de maand</h2>
-        <h3 class="maand__titelh3">De Prei</h3>
-        <h5 class="maand__titelh5">Seizoensproduct: december - mei</h5>
+        <h3 class="maand__titelh3">De Aardbei</h3>
+        <h5 class="maand__titelh5">Seizoensproduct: juni - september</h5>
     </section>
 
     <div class="info__maand">
         <ul>
-            <li><p>Prei is een heel veelzijdig en dankbaar ingrediënt in de keuken. De groente past in zowat alle gerechten. En met fijne reepjes preiwit of -groen kan je je gerechten ook altijd mooi afwerken.
+            <li><p>De aardbei is een kruidachtige plant die heel oud kan worden. In de praktijk is het meestal een éénjarige teelt. 
             </p></li>
-            <li><p>Ze is een belangrijke bron van vitamine A (vooral in het groene gedeelte) en vezels.
+            <li><p>Er bestaat een ruime keuze aan aardbeivariëteiten met ieder zijn eigen specifieke kwaliteit- en smaakeigenschappen.
             </p></li>
-            <li><p>Prei is lekker in soep, stoemp, quiche of een salade. Of gebruik haar als smaakmaker in wokgerechten, stoofpotjes of ovenschotels. Prei kan ook het witloof vervangen in de typisch Belgische hamrolletjes met witloof.
+            <li><p>Aardbeien zijn rijk aan vitamine C en vezels en zijn caloriearm. Ze bevatten koolhydraten, calcium, ijzer, natrium en vitamine B1 en B2.
             </p></li>
-            <li><p>Bij het bereiden slinkt het volume van prei nogal fel. Daarom reken je het best 400 à 500 g rauwe prei per persoon.</p></li>
+            <li><p>Aardbeiensiroop: Snijd de gespoelde aardbeien in stukjes, strooi er royaal suiker over. Laat enkele uren trekken. De aardbeien geven sap af en dat is heel lekker over roomijs, bij melk, yoghurt, karnemelk, pudding, enz.</p></li>
         </ul>
     </div>
 

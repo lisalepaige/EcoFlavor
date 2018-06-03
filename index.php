@@ -31,12 +31,11 @@ spl_autoload_register(function($class) {
 
    <div class="maand">
         <h1 class="maand__h1">Product van de maand</h1>
-        <h2 class="maand__h2">De Prei</h2>
+        <h2 class="maand__h2">De Aardbei</h2>
         <div class="maand__grid">
-        <p class="maand__p">Ben je aan het koken? Voeg dat wat prei toe aan het gerecht… 
-        het zorgt voor een rijkere en zachtere smaak. 
-        Een prei is ook ideaal als basis voor soep,
-        maar je kan het ook stomen of bakken in boter.</p>
+        <p class="maand__p">Aardbeien staan bekend als het seizoensproduct tijdens zonnige zomerdagen.
+        De periode juni-juli vormt nog steeds het hoofdseizoen met de grootste aanvoer.
+        In België is vooral Hoogstraten gekend voor zijn aardbeienteelt.</p>
         <a href="maand.php" class="btn btn--maand">Lees Meer<span class="border"></span></a>
         </div>
    </div>

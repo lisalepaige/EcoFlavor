@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css"> 
+    <link rel="icon" href="images/ecoflavor_logo.png">
 
     <title>EcoFlavor</title>
 </head>

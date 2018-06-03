@@ -30,7 +30,7 @@ error_reporting(E_ALL);
             
             <div class="prod">
             <?php foreach($bio as $b): ?>
-            <div class="prod__grid">
+            <div class="prod__grid bio__border">
                 <a href="search.php?search=<?php echo $b['groep_naam']; ?>">
                     <img class="prod__img" src="images/<?php echo $b['groep_image']; ?>" alt="bio">
                     <p><?php echo $b['groep_naam']; ?></p>

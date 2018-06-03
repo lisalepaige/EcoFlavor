@@ -95,7 +95,7 @@ header
 .maand
 {
     color: white;
-    background-image: url("../images/background.png");
+    background-image: url("../images/aardbei__maand.png");
     background-repeat: repeat-x, no-repeat;
     border-bottom-style: solid;
     border-color: #93C01F;
@@ -639,6 +639,26 @@ header
 
 /* fairtrade.php */
 
+.bio__border
+{
+    border-bottom: 4px solid #93C01F;
+}
+
+.streek__border
+{
+    border-bottom: 4px solid #4D180C;
+}
+
+.fair__border
+{
+    border-bottom: 4px solid #EB6608;
+}
+
+.seizoen__border
+{
+    border-bottom: 4px solid #F29100;
+}
+
 .fairtrade
 {
     background-color: #F2F2F2; /* grijs achtergrond */
@@ -1010,7 +1030,7 @@ header
 
 .maandproduct
 {
-    background-image: url('../images/preibackground.png');
+    background-image: url('../images/aardbei__maand.png');
     background-position: center;
     padding-top: 10px;
     padding-bottom: 40px;
