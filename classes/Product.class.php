@@ -48,7 +48,7 @@ include_once('Db.class.php');
             public static function ProductVDMaand()
             {
                 $conn = Db::getInstance();
-                $statement = $conn->prepare("SELECT * FROM groep, product, handelaar, producthandelaar WHERE product.groep_id = '9' 
+                $statement = $conn->prepare("SELECT * FROM groep, product, handelaar, producthandelaar WHERE product.groep_id = '4' 
                 AND groep.groep_id = '4'
                 AND producthandelaar.product_id = product.id
                 AND producthandelaar.handelaar_id = handelaar.id");  

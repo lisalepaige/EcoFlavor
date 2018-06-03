@@ -1148,6 +1148,50 @@ header
     
 }
 
+/* toevoegen.php */
+
+.h3__toevoegen
+{
+    margin-left: 10px;
+}
+
+.form__toevoegen
+{
+    padding-top: 20px;
+    background-color: white;
+}
+
+.checkboxes
+{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 25% 25% 25% 25%;
+    margin-top: 10px;
+}
+
+.checkboxes--cat
+{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 45% 45%;
+    margin-top: 10px;
+}
+
+.annuleren__toevoegen
+{
+    color: #8C1A14;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.input__toevoegen
+{
+    margin-bottom: 15px;
+}
+
 @media (max-width: 480px)
 {
 
