@@ -1187,6 +1187,11 @@ header
     margin-bottom: 20px;
 }
 
+.label__toevoegen
+{
+    margin-top: 10px;
+}
+
 .input__toevoegen
 {
     margin-bottom: 15px;

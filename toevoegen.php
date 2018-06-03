@@ -19,13 +19,13 @@
 
 <form action="" class="form__toevoegen">
 <div class="center">
-    <label class="label__eco" for="name">Naam product *</label>
+    <label class="label__eco label__toevoegen" for="name">Naam product *</label>
     <input class="input__eco" name="name" type="text" placeholder="Jonagold Appel"> 
 
-    <label class="label__eco" for="groep">Groepsnaam *</label>
+    <label class="label__eco label__toevoegen" for="groep">Groepsnaam *</label>
     <input class="input__eco" name="groep" type="text" placeholder="appel, banaan, rund, kaas, ...">
 
-    <label class="label__eco" for="seizoen">Seizoen *</label>
+    <label class="label__eco label__toevoegen" for="seizoen">Seizoen *</label>
     <div class="checkboxes">
         <div><input class="input__toevoegen" type="checkbox" value="januari" name="seizoen">Januari</div>
         <div><input class="input__toevoegen" type="checkbox" value="februari" name="seizoen">Februari</div>
@@ -41,7 +41,7 @@
         <div><input class="input__toevoegen" type="checkbox" value="december" name="seizoen">December</div>
     </div>
 
-    <label class="label__eco" for="categorie">Categorie</label>
+    <label class="label__eco label__toevoegen" for="categorie">Categorie</label>
         <div class="checkboxes--cat">
             <div><input class="input__toevoegen" type="checkbox" value="bio" name="categorie">Bio</div>
             <div><input class="input__toevoegen" type="checkbox" value="fairtrade" name="categorie">Fairtrade</div>
@@ -50,10 +50,10 @@
             <input class="input__eco" type="text" placeholder="stad/dorp" name="categorie">
         </div>
 
-    <label class="label__eco" for="prijs">Kostprijs/kg *</label>
+    <label class="label__eco label__toevoegen" for="prijs">Kostprijs/kg *</label>
     <input class="input__eco" name="prijs" type="text" placeholder="2.55">
 
-    <label class="label__eco" for="prijs">Foto product*</label>
+    <label class="label__eco label__toevoegen" for="prijs">Foto product*</label>
 
 
 
