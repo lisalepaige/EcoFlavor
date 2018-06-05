@@ -1192,6 +1192,30 @@ header
     margin-top: 10px;
 }
 
+.toevoegen__flexbox
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.bus__flexbox
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-top: -24px;
+}
+
+.inputtext__toevoegen
+{
+    width: 135px;
+}
+
+.input__nr
+{
+    height: 15px;
+}
+
 .input__toevoegen
 {
     margin-bottom: 15px;

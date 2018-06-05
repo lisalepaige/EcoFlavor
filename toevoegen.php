@@ -25,6 +25,30 @@
     <label class="label__eco label__toevoegen" for="groep">Groepsnaam *</label>
     <input class="input__eco" name="groep" type="text" placeholder="appel, banaan, rund, kaas, ...">
 
+    <label class="label__eco label__toevoegen" for="groep">Naam Handelaar *</label>
+    <input class="input__eco" name="groep" type="text" placeholder="">
+
+     <label class="label__eco" for="straat">Straat *</label>
+    <input class="input__eco" name="street" type="text" placeholder="Bruul">
+
+    
+    <label class="label__eco" for="nr">Nr *</label>
+
+    <div class="toevoegen__flexbox">
+        <input class="input__eco inputtext__toevoegen input__nr" type="text" placeholder="42" name="nr">
+
+        <div class="bus__flexbox">
+            <label class="label__eco" for="bus">Bus</label>
+            <input class="input__eco inputtext__toevoegen" type="text" placeholder="B12" name="bus">
+        </div>
+    </div>
+
+    <label class="label__eco" for="postcode">Postcode *</label>
+    <input class="input__eco" type="text" name="postocde" placeholder="2800">
+
+    <label class="label__eco" for="gemeente">Gemeente *</label>
+    <input class="input__eco" type="text" name="gemeente" placeholder="Mechelen">
+
     <label class="label__eco label__toevoegen" for="seizoen">Seizoen *</label>
     <div class="checkboxes">
         <div><input class="input__toevoegen" type="checkbox" value="januari" name="seizoen">Januari</div>
