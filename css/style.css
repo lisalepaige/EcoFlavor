@@ -1171,10 +1171,14 @@ header
 
 .checkboxes--cat
 {
-    display: grid;
-    grid-template-columns: 45% 45%;
-    grid-template-rows: 45% 45%;
+    display: flex;
+    flex-direction: row;
     margin-top: 10px;
+}
+
+.toevoegen__cat
+{
+    margin-right: 50px;
 }
 
 .annuleren__toevoegen

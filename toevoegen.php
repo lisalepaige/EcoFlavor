@@ -64,9 +64,9 @@
 
     <label class="label__eco label__toevoegen" for="categorie">Categorie</label>
         <div class="checkboxes--cat">
-            <div><input class="input__toevoegen" type="checkbox" value="bio" name="categorie">Bio</div>
-            <div><input class="input__toevoegen" type="checkbox" value="fairtrade" name="categorie">Fairtrade</div>
-            <div><input class="input__toevoegen" type="checkbox" value="vers" name="categorie">Vers</div>
+            <div class="toevoegen__cat"><input class="input__toevoegen" type="checkbox" value="bio" name="categorie">Bio</div>
+            <div class="toevoegen__cat"><input class="input__toevoegen" type="checkbox" value="fairtrade" name="categorie">Fairtrade</div>
+            <div class="toevoegen__cat"><input class="input__toevoegen" type="checkbox" value="vers" name="categorie">Vers</div>
         </div>
 
 
@@ -77,6 +77,11 @@
     <input id="prijs" class="input__eco" name="prijs" type="text" placeholder="2.55">
 
     <label class="label__eco label__toevoegen" for="prijs">Foto product*</label>
+
+    <input type="hidden" name="MAX_FILE_SIZE" value="10000" />
+    <input type="file" name="post_image" id="post_image"><br>
+    <div id="posted_image" class="hidden post_image_size"></div>
+            
 
     </div class="form__ecobutton">  
         <a href="#" id="toevoegen" class="btn btn--bestelling">Plaatsen<span class="border border-bestelling border--mand"></span></a>
