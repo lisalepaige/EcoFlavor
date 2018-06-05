@@ -39,12 +39,12 @@
 
         <div class="postcode__flexbox">
             <label class="label__eco" for="postcode">Postcode *</label>
-            <input class="input__eco inputtext__toevoegen" type="text" name="postocde" placeholder="2800">
+            <input id="postcode" class="input__eco inputtext__toevoegen" type="text" name="postocde" placeholder="2800">
         </div>
     </div>
 
     <label class="label__eco" for="gemeente">Gemeente *</label>
-    <input class="input__eco" type="text" name="gemeente" placeholder="Mechelen">
+    <input id="gemeente" class="input__eco" type="text" name="gemeente" placeholder="Mechelen">
 
     <label class="label__eco label__toevoegen" for="seizoen">Seizoen *</label>
     <div class="checkboxes">
@@ -67,16 +67,16 @@
             <div><input class="input__toevoegen" type="checkbox" value="bio" name="categorie">Bio</div>
             <div><input class="input__toevoegen" type="checkbox" value="fairtrade" name="categorie">Fairtrade</div>
             <div><input class="input__toevoegen" type="checkbox" value="vers" name="categorie">Vers</div>
-            <div><input class="input__toevoegen" type="checkbox" value="streekproduct" name="categorie">Streekproduct</div>
-            <input class="input__eco" type="text" placeholder="stad/dorp" name="categorie">
         </div>
 
+
+    <label class="label__eco label__toevoegen" for="oorsprong">Oorsprong *</label>
+    <input id="oorsprong" class="input__eco" type="text" placeholder="stad/dorp" name="oorsprong">    
+
     <label class="label__eco label__toevoegen" for="prijs">Kostprijs/kg *</label>
-    <input class="input__eco" name="prijs" type="text" placeholder="2.55">
+    <input id="prijs" class="input__eco" name="prijs" type="text" placeholder="2.55">
 
     <label class="label__eco label__toevoegen" for="prijs">Foto product*</label>
-
-
 
     </div class="form__ecobutton">  
         <a href="#" id="toevoegen" class="btn btn--bestelling">Plaatsen<span class="border border-bestelling border--mand"></span></a>

@@ -120,6 +120,21 @@ include_once('Db.class.php');
     
             }
 
+
+        public function SaveNewProduct($product_naam, $prijs, $oorsprong){
+
+            $conn = Db::getInstance();
+            $statement = $conn->prepare("INSERT INTO product (`product_naam`, `product_prijs`, `oorsprong`) 
+            VALUES (':product_naam', ':prijs', ':oorsprong')";
+            $statement->bindValue(":product_naam", $product_naam);
+            $statement->bindValue(":prijs", $prijs);
+            $statement->bindValue(":oorsprong", $oorsprong);
+            $statement->execute();
+
+            return $products = $statement->fetchAll(PDO::FETCH_ASSOC);
+        }
+
+
     }
 
 ?>
