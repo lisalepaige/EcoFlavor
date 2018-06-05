@@ -20,31 +20,28 @@
 <form action="" class="form__toevoegen">
 <div class="center">
     <label class="label__eco label__toevoegen" for="name">Naam product *</label>
-    <input class="input__eco" name="name" type="text" placeholder="Jonagold Appel"> 
+    <input id="naamproduct" class="input__eco" name="name" type="text" placeholder="Jonagold Appel"> 
 
     <label class="label__eco label__toevoegen" for="groep">Groepsnaam *</label>
-    <input class="input__eco" name="groep" type="text" placeholder="appel, banaan, rund, kaas, ...">
+    <input id="groepsnaam" class="input__eco" name="groep" type="text" placeholder="appel, banaan, rund, kaas, ...">
 
-    <label class="label__eco label__toevoegen" for="groep">Naam Handelaar *</label>
-    <input class="input__eco" name="groep" type="text" placeholder="">
+    <label class="label__eco label__toevoegen" for="handelaarsnaam">Naam Handelaar *</label>
+    <input id="naamhandelaar" class="input__eco" name="handelaarsnaam" type="text" placeholder="">
 
      <label class="label__eco" for="straat">Straat *</label>
-    <input class="input__eco" name="street" type="text" placeholder="Bruul">
+    <input id="straat" class="input__eco" name="street" type="text" placeholder="Bruul">
 
     
     <label class="label__eco" for="nr">Nr *</label>
 
     <div class="toevoegen__flexbox">
-        <input class="input__eco inputtext__toevoegen input__nr" type="text" placeholder="42" name="nr">
+        <input id="nummer" class="input__eco inputtext__toevoegen input__nr" type="text" placeholder="42" name="nr">
 
-        <div class="bus__flexbox">
-            <label class="label__eco" for="bus">Bus</label>
-            <input class="input__eco inputtext__toevoegen" type="text" placeholder="B12" name="bus">
+        <div class="postcode__flexbox">
+            <label class="label__eco" for="postcode">Postcode *</label>
+            <input class="input__eco inputtext__toevoegen" type="text" name="postocde" placeholder="2800">
         </div>
     </div>
-
-    <label class="label__eco" for="postcode">Postcode *</label>
-    <input class="input__eco" type="text" name="postocde" placeholder="2800">
 
     <label class="label__eco" for="gemeente">Gemeente *</label>
     <input class="input__eco" type="text" name="gemeente" placeholder="Mechelen">
@@ -82,7 +79,7 @@
 
 
     </div class="form__ecobutton">  
-        <a href="index.php" id="leveren" class="btn btn--bestelling">Plaatsen<span class="border border-bestelling border--mand"></span></a>
+        <a href="#" id="toevoegen" class="btn btn--bestelling">Plaatsen<span class="border border-bestelling border--mand"></span></a>
         <a href="#" class="annuleren__toevoegen">Annuleren</a>
     </div>
 
@@ -91,6 +88,9 @@
 </form>
 
 <?php include_once("nav.inc.php"); ?>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="script/getNewProduct.js"></script>
 
 </body>
 </html>
