@@ -6,20 +6,56 @@ include_once('Db.class.php');
     
         private $db;
         private $id;
+        private $image;
 
         public function getId()
         {
-                return $this->id;
+            return $this->id;
         }
 
         public function setId($id)
         {
-                $this->id = $id;
+            $this->id = $id;
 
-                return $this;
+            return $this;
         }
 
-            public static function ShowProduct(){
+        public function getImage()
+        {
+                return $this->image;
+        }
+
+        public function setImage($image)
+        {
+            function random_string($length) {
+
+                $key = '';
+                $keys = array_merge(range(0, 9), range('a', 'z'));
+                    
+                for ($i = 0; $i < $length; $i++) {
+                    $key .= $keys[array_rand($keys)];
+                }
+                    
+                return $key;
+            }
+
+            $myname = random_string(10).$image['name'];
+            $thumb_size = 400;
+            $img = file_get_contents( $image['tmp_name'] );
+            $picture = imagecreatefromstring( $img );
+
+            if(!defined('__ROOT__')){
+                define('__ROOT__', dirname(dirname(__FILE__)));
+            }
+                    
+            $save_path= __ROOT__.'/post_images/ ';
+            rename($myname, $save_path . $myname);
+                
+            $this->image = $myname;
+            return $this;
+        }
+
+        public static function ShowProduct(){
 
                 $conn = Db::getInstance();
                 $statement = $conn->prepare("SELECT * FROM product, handelaar, producthandelaar 
@@ -28,9 +64,9 @@ include_once('Db.class.php');
                 $statement->execute();
 
                 return $products = $statement->fetchAll(PDO::FETCH_ASSOC);
-            }
+        }
 
-            public static function ShowOne($id){
+        public static function ShowOne($id){
 
                 $conn = Db::getInstance();
                 $statement = $conn->prepare("SELECT * FROM product, handelaar, producthandelaar, openingsuren, adres 
@@ -43,10 +79,10 @@ include_once('Db.class.php');
                 $statement->execute();
 
                 return $oneProduct = $statement->fetchAll(PDO::FETCH_ASSOC);
-            }
+        }
 
-            public static function ProductVDMaand()
-            {
+        public static function ProductVDMaand()
+        {
                 $conn = Db::getInstance();
                 $statement = $conn->prepare("SELECT * FROM groep, product, handelaar, producthandelaar WHERE product.groep_id = '4' 
                 AND groep.groep_id = '4'
@@ -56,9 +92,9 @@ include_once('Db.class.php');
                 $maand = $statement->fetchAll(PDO::FETCH_ASSOC);
 
                 return $maand;
-            }
+        }
 
-            public static function searchProduct($search){
+        public static function searchProduct($search){
 
                     $conn = Db::getInstance();
 
@@ -84,9 +120,9 @@ include_once('Db.class.php');
                     }
 
                         return $foundProduct;
-            }
+        }
 
-            public static function getDistance($addressFrom, $addressTo, $unit){
+        public static function getDistance($addressFrom, $addressTo, $unit){
                 //Change address format
                 $formattedAddrFrom = str_replace(' ','+',$addressFrom);
                 $formattedAddrTo = str_replace(' ','+',$addressTo);
@@ -118,14 +154,14 @@ include_once('Db.class.php');
                     return $miles.' mi';
                 }
     
-            }
+        }
 
 
         public function SaveNewProduct($product_naam, $prijs, $oorsprong){
 
             $conn = Db::getInstance();
-            $statement = $conn->prepare("INSERT INTO product (`product_naam`, `product_prijs`, `oorsprong`) 
-            VALUES (':product_naam', ':prijs', ':oorsprong')";
+            $statement = $conn->prepare("INSERT INTO product (product_naam, product_prijs, oorsprong) 
+            VALUES (:product_naam, :prijs, :oorsprong) ");
             $statement->bindValue(":product_naam", $product_naam);
             $statement->bindValue(":prijs", $prijs);
             $statement->bindValue(":oorsprong", $oorsprong);
@@ -133,8 +169,5 @@ include_once('Db.class.php');
 
             return $products = $statement->fetchAll(PDO::FETCH_ASSOC);
         }
-
-
     }
-
 ?>

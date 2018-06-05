@@ -12,11 +12,17 @@ include_once("../classes/Product.class.php");
             $postcode = $_POST['postcode'];
             $gemeente = $_POST['gemeente'];
 
-            $siezoen_val = $_POST['siezoen_val'];
-            $categorie_val = $_POST['categorie_val'];
+            //$siezoen_val = $_POST['siezoen_val'];
+            //$categorie_val = $_POST['categorie_val'];
 
             $prijs = $_POST['prijs'];
             $oorsprong = $_POST['oorsprong'];
+
+            //$image = $_POST['image'];
+
+            $newproduct = new Product();
+            //$newproduct->setImage($image);
+            $newproduct->SaveNewProduct($product_naam, $prijs, $oorsprong);
             
         
             $response['status'] = 'success';

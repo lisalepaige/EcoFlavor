@@ -76,11 +76,8 @@
     <label class="label__eco label__toevoegen" for="prijs">Kostprijs/kg *</label>
     <input id="prijs" class="input__eco" name="prijs" type="text" placeholder="2.55">
 
-    <label class="label__eco label__toevoegen" for="prijs">Foto product*</label>
-
-    <input type="hidden" name="MAX_FILE_SIZE" value="10000" />
-    <input type="file" name="post_image" id="post_image"><br>
-    <div id="posted_image" class="hidden post_image_size"></div>
+    <label class="label__eco label__toevoegen" for="image">Foto product*</label>
+    <input type="file" name="image" id="image">
             
 
     </div class="form__ecobutton">  
