@@ -12,39 +12,18 @@
     <a href="index.php"><img src="images/arrow.png" alt="back" class="arrow"></a>
     <a href="index.php"><img src="images/home.png" alt="home" class="header__home"></a>
     <a href="instellingen.php"><img src="images/instellingen.png" alt="instellingen"></a>
-</header>
-      
- <h3 class="h3__toevoegen">Product toevoegen</h3>
- 
+</header> 
 
 <form action="" class="form__toevoegen">
+
+<h3 class="h3__toevoegen">Product toevoegen</h3>
+
 <div class="center">
     <label class="label__eco label__toevoegen" for="name">Naam product *</label>
     <input id="naamproduct" class="input__eco" name="name" type="text" placeholder="Jonagold Appel"> 
 
     <label class="label__eco label__toevoegen" for="groep">Groepsnaam *</label>
     <input id="groepsnaam" class="input__eco" name="groep" type="text" placeholder="appel, banaan, rund, kaas, ...">
-
-    <label class="label__eco label__toevoegen" for="handelaarsnaam">Naam Handelaar *</label>
-    <input id="naamhandelaar" class="input__eco" name="handelaarsnaam" type="text" placeholder="">
-
-     <label class="label__eco" for="straat">Straat *</label>
-    <input id="straat" class="input__eco" name="street" type="text" placeholder="Bruul">
-
-    
-    <label class="label__eco" for="nr">Nr *</label>
-
-    <div class="toevoegen__flexbox">
-        <input id="nummer" class="input__eco inputtext__toevoegen input__nr" type="text" placeholder="42" name="nr">
-
-        <div class="postcode__flexbox">
-            <label class="label__eco" for="postcode">Postcode *</label>
-            <input id="postcode" class="input__eco inputtext__toevoegen" type="text" name="postocde" placeholder="2800">
-        </div>
-    </div>
-
-    <label class="label__eco" for="gemeente">Gemeente *</label>
-    <input id="gemeente" class="input__eco" type="text" name="gemeente" placeholder="Mechelen">
 
     <label class="label__eco label__toevoegen" for="seizoen">Seizoen *</label>
     <div class="checkboxes">

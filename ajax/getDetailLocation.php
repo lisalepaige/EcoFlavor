@@ -32,7 +32,7 @@ if(!empty($_POST['latitude']) && !empty($_POST['longitude'])){
 
     $calculateDis = Product::getDistance($addressFrom, $addressTo, $unit);
     //echo $addressFrom;
-    echo $addressTo;
+    //echo $addressTo;
 
     $response['status'] = "success";
     $response['distance'] = $calculateDis;

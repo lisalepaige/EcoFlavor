@@ -19,11 +19,17 @@ function showLocation(position){
         data:'latitude='+latitude+'&longitude='+longitude,
     
     }).done(function( res ) {
+
+        if( res.status == "success") {
             
         console.log(res);
         $('.searchP__afstand').html(res.distance);
+
+        }
                 
     }).fail(function (res) {
-        console.log("Sorry. Ajax failed ");
+        console.log("Ajax failed ");
+
+        $('.searchP__afstand').html("no location");
     });
 }

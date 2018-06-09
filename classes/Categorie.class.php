@@ -23,21 +23,22 @@ include_once('Db.class.php');
 
         }
 
-        public static function GetBio(){
+        public function GetBio(){
 
             $conn = Db::getInstance();
-            $stmt = $conn->prepare("SELECT * FROM product, groep WHERE bio = 'bio' AND product.groep_id = groep.groep_id");
+            $stmt = $conn->prepare("SELECT * FROM product, groep WHERE bio = 'bio' 
+            AND product.groep_id = groep.groep_id");
             $stmt->execute();
             $bio = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-            $foundBio = [];
-                        foreach($bio as $b){
-                                
-                            $foundBio[$b['groep_id']] = $b;
-                                                               
-                        }
-           
-            return $foundBio;
+                $foundBio = [];
+                            foreach($bio as $b){
+                                    
+                                $foundBio[$b['groep_id']] = $b;
+                                                                
+                            }
+            
+                return $foundBio;
 
         }
 
@@ -79,5 +80,31 @@ include_once('Db.class.php');
             return $foundSeizoen;
 
         }
+
+        public static function GetFruit() 
+        {
+            $conn = Db::getInstance();
+                $stmt = $conn->prepare("SELECT * FROM product, groep WHERE soort = 'fruit' 
+                AND product.groep_id = groep.groep_id");
+                $stmt->execute();
+                $fruit = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            
+            return $fruit;
+
+        }
+
+        public static function GetGroente() 
+        {
+            $conn = Db::getInstance();
+                $stmt = $conn->prepare("SELECT * FROM product, groep WHERE soort = 'groente' 
+                AND product.groep_id = groep.groep_id");
+                $stmt->execute();
+                $groente = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            
+            return $groente;
+
+        }
+
+
 
     } 

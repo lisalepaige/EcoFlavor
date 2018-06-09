@@ -22,6 +22,18 @@ $fair = Categorie::GetFairtrade();
     </form>
     </div>
 
+    <div class="cat__filter">
+        <label class="filters" for="filter">Filter</label>
+        <select name="filter" class="filter__options">
+            <option value="Kies"></option>
+            <option value="Fruit">Fruit</option>
+            <option value="Groente">Groente</option>
+            <option value="Vlees">Vlees</option>
+            <option value="Vis">Vis</option>
+            <option value="Zuivelproduct">Zuivelproduct</option>
+        </select>
+    </div>
+
     <main class="fairtrade">
         <h3>Fairtradeproducten</h3>
         

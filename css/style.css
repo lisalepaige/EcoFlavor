@@ -706,6 +706,11 @@ header
     object-fit: cover;
 }
 
+.cat__filter
+{
+    margin-top: 20px;
+}
+
 /* bestelling.php */
 
 .best_aantal

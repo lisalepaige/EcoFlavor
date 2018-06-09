@@ -27,9 +27,13 @@ function showLocation(position){
         data:'latitude='+latitude+'&longitude='+longitude+'&straatnaam='+straatnaam+'&huisnr='+huisnr+'&postcode='+postcode+'&gemeente='+gemeente,
     
     }).done(function( res ) {
+
+        if( res.status == "success") {
             
         console.log(res);
         $('.distance').html(res.distance);
+
+        }
                 
     }).fail(function (res) {
         console.log("Sorry. Ajax failed ");
