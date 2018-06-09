@@ -30,7 +30,7 @@ if ( isset($_GET['search']) ){
     </form>
     </div> 
 
-     <div class="cat__filter">
+     <div class="search__filter">
         <label class="filters" for="filter">Filter</label>
         <select name="filter" class="filter__options">
             <option value="Kies"></option>

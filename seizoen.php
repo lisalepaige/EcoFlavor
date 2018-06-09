@@ -1,6 +1,18 @@
 <?php
 
 include_once("classes/Categorie.class.php");
+include_once("classes/Product.class.php");
+
+    $bio = Categorie::GetBio();  
+
+    if ( isset($_GET['search']) ){
+        $search = $_GET['search'];
+        $product = Product::searchProduct($search);  
+
+        header("Location: search.php?search=$search");
+
+    }
+    
 $seizoen = Categorie::GetSeizoen();  
 
 ?><!DOCTYPE html>
